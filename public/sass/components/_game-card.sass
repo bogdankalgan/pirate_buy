@@ -1,0 +1,158 @@
+.game-card
+    display: inline-block
+    border-radius: .9rem
+    border: 1px solid $color-white-dark
+    width: 36rem
+    height: 49rem
+    @include mobile
+        width: 34.5rem
+        height: 47rem
+    &:nth-child(1) &-img
+        padding: 1.4rem 2.9rem 1.6rem 3.4rem
+        img
+            width: 29.7rem
+            height: 27.8rem
+    &:nth-child(5) &-img
+        padding: 1.4rem 2.9rem 1.6rem 3.4rem
+        img
+            width: 29.7rem
+            height: 27.8rem
+    &:nth-child(2) &-img
+        padding: 2rem 3.3rem 1.1rem 2.9rem
+        &::before
+            background: $color-coral
+        img
+            width: 29.7rem
+            height: 27.7rem
+    &:nth-child(6) &-img
+        padding: 2rem 3.3rem 1.1rem 2.9rem
+        &::before
+            background: $color-coral
+        img
+            width: 29.7rem
+            height: 27.7rem
+    &:nth-child(3) &-img
+        padding: 4.8rem 6.1rem 4.4rem 6.5rem
+        &::before
+            background: $color-purple
+        img
+            width: 23.4rem
+            height: 21.8rem
+    &:nth-child(7) &-img
+        padding: 4.8rem 6.1rem 4.4rem 6.5rem
+        &::before
+            background: $color-purple
+        img
+            width: 23.4rem
+            height: 21.8rem
+    &:nth-child(4) &-img 
+        padding: 2.7rem 4.6rem 3.8rem 3.3rem 
+        &::before
+            background: $color-green-dark
+        img
+            width: 28rem
+            height: 24.5rem
+    &:nth-child(8) &-img 
+        padding: 2.7rem 4.6rem 3.8rem 3.3rem 
+        &::before
+            background: $color-green-dark
+        img
+            width: 28rem
+            height: 24.5rem
+    &-text
+        padding: 1.2rem 3rem 1.8rem 3rem
+    &__sale
+        &-item
+            background: $color-green-53
+            font-size: 1.2rem
+            font-weight: 600
+            padding: .3rem
+            position: absolute
+            left: 8.6rem
+            top: 2rem
+            border-radius: .5rem
+        &-green
+            color: $color-green-53
+            font-size: 2.1rem 
+            font-weight: 700
+        &-sale
+            font-size: 1.4rem
+            font-weight: 600
+            text-decoration: line-through
+            text-decoration-color: $color-orange 
+    &__new
+        &-item
+            position: absolute
+            left: 2rem 
+            top: 2rem
+            background: $color-blue
+            padding: .4rem .6rem
+            border-radius: .5rem
+            font-size: 1.2rem
+            font-weight: 600 
+    &__hot
+        &-item
+            background: $color-orange
+            padding: .3rem .8rem
+            position: absolute
+            left: 2rem 
+            top: 2rem
+            border-radius: .5rem
+            font-size: 1.2rem
+            font-weight: 600
+    &-img
+        background: $color-black
+        color: $color-white
+        position: relative
+        overflow: hidden
+        z-index: 1
+        border-radius: .9rem
+        border-bottom-right-radius: 0
+        border-bottom-left-radius: 0
+        &::before
+            content: " "
+            display: block
+            width: 100%
+            height: 29.5rem
+            background: url(../img/game-card/1-bcg.svg) center center no-repeat
+            position: absolute
+            top: 0rem
+            left: 0rem
+            filter: blur(109px)
+            z-index: -1
+    &-title
+        color: $color-blue-dark
+        font-size: 1.8rem
+        font-weight: 700
+        line-height: 2.5rem
+        margin-bottom: .4rem
+    &-list
+        list-style-image: url(../icons/game-card/circle.svg)
+        padding-left: 1.4rem
+        margin-bottom: .9rem
+        &-item
+            font-size: 1.2rem 
+            font-weight: 500
+            line-height: 20px
+    &-price
+        display: flex
+        justify-content: space-between
+        align-items: end
+        &-text
+            font-size: 1.2rem
+            color: $color-grey-vs
+            margin-right: .5rem
+        &-number
+            color: $color-blue-dark
+            font-size: 2.1rem
+            font-weight: 600
+            line-height: 1
+        &-block
+            display: flex
+            align-items: end
+            
+            
+
+#newHotCard
+    .game-card__hot-item
+        left: 8.4rem 

@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.1/nouislider.min.css"
+    />
+    <link rel="shortcut icon" href="icons/siteIcon/Logo.svg" type="image/svg" />
+    <link rel="stylesheet" href="css/bootsrap-revboot.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Card Modification</title>
+  </head>
+  <body>
+    <header class="header header-card-mod">
+      <button class="header-burger-button" id="burgerButton">
+        <i class="fa-solid fa-bars" id="burgerButtonIcon"></i>
+      </button>
+
+      <div class="header-burger" id="burger">
+        <div class="header-burger-text">
+          <p class="header-burger-title">Choose game</p>
+        </div>
+
+        <div class="header-burger-items">
+          <a href="#" class="header-burger-item">
+            <img src="icons/burger/1.svg" alt="" />
+
+            Overwatch 2
+          </a>
+
+          <a href="#" class="header-burger-item">
+            <img src="icons/burger/2.svg" alt="" />
+
+            Hearthstone
+          </a>
+
+          <a href="#" class="header-burger-item">
+            <img src="icons/burger/3.svg" alt="" />
+
+            Counter Strike 2
+          </a>
+
+          <a href="#" class="header-burger-item">
+            <img src="icons/burger/4.svg" alt="" />
+
+            Apex legends
+          </a>
+
+          <a href="#" class="header-burger-item">
+            <img src="icons/burger/5.svg" alt="" />
+
+            Pubg
+          </a>
+
+          <a href="#" class="header-burger-item">
+            <img src="icons/burger/6.svg" alt="" />
+
+            Fortnite
+          </a>
+
+          <a href="#" class="header-burger-item">
+            <img src="icons/burger/7.svg" alt="" />
+
+            DOTA 2s
+          </a>
+
+          <a href="#" class="header-burger-item">
+            <img src="icons/burger/8.svg" alt="" />
+
+            FIFA 24
+          </a>
+        </div>
+
+        <div class="header-burger-links">
+          <a href="#" class="header-burger-link">Jobs</a>
+          <a href="#" class="header-burger-link">Support</a>
+          <a href="#" class="header-burger-link">FAQ</a>
+        </div>
+
+        <div class="header-burger-select-container">
+          <select name="" id="burgerSelect" class="header-burger-select">
+            <option value="usd">$ usd</option>
+
+            <option value="rub">₽ rub</option>
+
+            <option value="btc">₿ btc</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="header-card-mod-icon">
+        <img src="icons/siteIcon/Logo.svg" alt="" />
+      </div>
+
+      <div class="header-card-mod-choose-game">
+        <div class="header-card-mod-devider"></div>
+
+        <button class="header-card-mod-choose-game-button">
+          <i class="fa-solid fa-bars"></i>
+          <i class="fa-solid fa-xmark" style="display: none"></i> Choose game
+          <i class="fa-solid fa-angle-down"></i>
+        </button>
+
+        <div class="header-card-mod-devider"></div>
+      </div>
+
+      <ul class="header-card-mod-list">
+        <li class="header-card-mod-list-item">
+          <a href="#">Jobs</a>
+        </li>
+
+        <li class="header-card-mod-list-item">
+          <a href="#">Support</a>
+        </li>
+
+        <li class="header-card-mod-list-item">
+          <a href="#">FAQ</a>
+        </li>
+      </ul>
+
+      <div class="header-card-mod-actions">
+        <button class="header-card-mod-search search-button">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+
+        <select name="" id="" class="header-card-mod-select">
+          <option value="usd">$ usd</option>
+          <option value="eur">€ eur</option>
+          <option value="usd">₿ btc</option>
+        </select>
+
+        <button class="header-card-mod-trash trash-button">
+          <i class="fa-solid fa-bag-shopping"></i>
+        </button>
+
+        <div class="header-card-mod-devider"></div>
+
+        <button class="sign-in">Sign in</button>
+      </div>
+    </header>
+
+    <main>
+      <div class="card-mod-modal">
+        <ul class="card-mod-modal-list">
+          <li class="card-mod-modal-list-item card-mod-modal-list-item__head">
+            <a href="#">CATEGORIES</a>
+          </li>
+
+          <li class="card-mod-modal-list-item">
+            <a href="#">Rank Boosting</a>
+          </li>
+
+          <li class="card-mod-modal-list-item">
+            <a href="#">Badges</a>
+          </li>
+
+          <li class="card-mod-modal-list-item">
+            <a href="#">Coaching</a>
+          </li>
+
+          <li class="card-mod-modal-list-item">
+            <a href="#">Wins Farm</a>
+          </li>
+
+          <li class="card-mod-modal-list-item">
+            <a href="#">Kills Farm</a>
+          </li>
+
+          <li class="card-mod-modal-list-item">
+            <a href="#">Battle Pass Leveling</a>
+          </li>
+
+          <li class="card-mod-modal-list-item">
+            <a href="#">Leveling</a>
+          </li>
+        </ul>
+
+        <ul class="card-mod-modal-list">
+          <li class="card-mod-modal-list-item card-mod-modal-list-item__head">
+            <a href="#">CATEGORIES 2</a>
+          </li>
+
+          <li class="card-mod-modal-list-item">
+            <a href="#">Rank Boosting</a>
+          </li>
+
+          <li class="card-mod-modal-list-item">
+            <a href="#">Badges</a>
+          </li>
+
+          <li class="card-mod-modal-list-item">
+            <a href="#">Coaching</a>
+          </li>
+
+          <li class="card-mod-modal-list-item">
+            <a href="#">Wins Farm</a>
+          </li>
+
+          <li class="card-mod-modal-list-item">
+            <a href="#">Kills Farm</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="container df">
+        <aside class="aside">
+          <a href="#" class="header-burger-item">
+            <img src="icons/burger/1.svg" alt="" />
+
+            Overwatch 2
+          </a>
+
+          <a href="#" class="header-burger-item">
+            <img src="icons/burger/2.svg" alt="" />
+
+            Hearthstone
+          </a>
+
+          <a href="#" class="header-burger-item">
+            <img src="icons/burger/3.svg" alt="" />
+
+            Counter Strike 2
+          </a>
+
+          <a href="#" class="header-burger-item">
+            <img src="icons/burger/4.svg" alt="" />
+
+            Apex legends
+          </a>
+
+          <a href="#" class="header-burger-item">
+            <img src="icons/burger/5.svg" alt="" />
+
+            Pubg
+          </a>
+
+          <a href="#" class="header-burger-item">
+            <img src="icons/burger/6.svg" alt="" />
+
+            Fortnite
+          </a>
+
+          <a href="#" class="header-burger-item">
+            <img src="icons/burger/7.svg" alt="" />
+
+            DOTA 2
+          </a>
+
+          <a href="#" class="header-burger-item">
+            <img src="icons/burger/8.svg" alt="" />
+
+            FIFA 24
+          </a>
+        </aside>
+
+        <section class="card-info">
+          <div class="bread-crumbs">
+            <button class="bread-crumbs-back">
+              <i class="fa-solid fa-arrow-left"></i>
+            </button>
+
+            <a href="#" class="bread-crumbs-link">Home</a>
+
+            <div class="bread-crumbs-i">
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+
+            <a href="#" class="bread-crumbs-link">Apex legends</a>
+
+            <div class="bread-crumbs-i">
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+
+            <p class="bread-crumbs-current">Rated Battlegrounds (RBG) Boost</p>
+          </div>
+
+          <div class="card-info-text">
+            <h2 class="title-secondary margin-bottom-8px font-size-48px">
+              Rated Battlegrounds (RBG) Boost
+            </h2>
+
+            <div class="card-info-text-rating">
+              <div class="card-info-text-rating-icons">
+                <span>Rating</span>
+
+                <div class="card-info-text-rating-stars df">
+                  <div class="star-icon">
+                    <img src="icons/hero/2.svg" alt="" style="margin: 0" />
+                  </div>
+
+                  <div class="star-icon">
+                    <img src="icons/hero/2.svg" alt="" style="margin: 0" />
+                  </div>
+
+                  <div class="star-icon">
+                    <img src="icons/hero/2.svg" alt="" style="margin: 0" />
+                  </div>
+
+                  <div class="star-icon">
+                    <img src="icons/hero/2.svg" alt="" style="margin: 0" />
+                  </div>
+
+                  <div class="star-icon">
+                    <img src="icons/hero/2.svg" alt="" style="margin: 0" />
+                  </div>
+                </div>
+              </div>
+
+              <span style="margin-right: 7px">4.89</span> out of
+              <span style="margin-right: 7px; margin-left: 7px">5</span> based
+              on
+              <span style="margin-right: 7px; margin-left: 7px">349</span>
+              reviews
+            </div>
+          </div>
+
+          <div class="card-info-content">
+            <div class="tabs-border">
+              <div class="tabs-border-item tabs-border-item__active">
+                <a href="#">Description</a>
+              </div>
+
+              <div class="tabs-border-item">
+                <a href="#">Requirements</a>
+              </div>
+
+              <div class="tabs-border-item">
+                <a href="#">How it Works</a>
+              </div>
+            </div>
+
+            <div class="card-info-content-descr">
+              <p class="card-info-content-descr-text">
+                Buy Apex rank boost to any rank, even to a Predator! If you're
+                tired of dumb teammates that can't do a thing, look no further -
+                we also have a self-play option for our Apex rank carry service
+                <br />
+                <br />
+                Our pros will deliver this service as fast as possible. Any Rank
+                will be achieved in the shortest amount of time. Even if you
+                want a predator rank, our pros will be able to get you up there
+                in the shortest time out there. If you buy Predator Rank, you'll
+                get it with a 100% guarantee. Any platform is available. We have
+                pros who specialize in different platforms. Our services are
+                absolutely safe. No cheats or bots are used.
+              </p>
+
+              <div class="card-info-ul">
+                <h3 class="title-third margin-bottom-8px">WHAT YOU WILL GET</h3>
+
+                <ul class="card-info-list">
+                  <li class="card-info-list-item">
+                    <span class="span-green">Desired Rank;</span>
+                  </li>
+                  <li class="card-info-list-item">
+                    <span class="span-orange">High Stats</span> during the
+                    match;
+                  </li>
+                  <li class="card-info-list-item">
+                    Experience to raise your account Level;
+                  </li>
+                  <li class="card-info-list-item">
+                    Seasonal ranked rewards such as Dive Trail and Account
+                    Badge;
+                  </li>
+                  <li class="card-info-list-item">
+                    Some badges and quests may be completed during the boost.
+                  </li>
+                </ul>
+              </div>
+
+              <div class="card-info-ul">
+                <h3 class="title-third margin-bottom-8px">EXECUTION OPTIONS</h3>
+
+                <ul class="card-info-list card-info-list__done">
+                  <li class="card-info-list-item">
+                    <span class="span-blue">Normal</span> — a first-come,
+                    first-served basis;
+                  </li>
+
+                  <li class="card-info-list-item">
+                    <span class="span-green">Express</span> — 30% faster
+                    completion with a high priority with a start in 1-2 hours;
+                  </li>
+
+                  <li class="card-info-list-item">
+                    <span class="span-orange"> Super Express </span>
+                    — for this order, we will take the dedicated pro booster for
+                    Apex MMR boost and finish this offer 40% faster, and you
+                    will get a free live stream.
+                  </li>
+                </ul>
+              </div>
+
+              <div class="card-info-ul" style="margin-bottom: 96px">
+                <h3 class="title-third margin-bottom-8px">
+                  ADDITIONAL OPTIONS
+                </h3>
+
+                <ul class="card-info-list">
+                  <li class="card-info-list-item">
+                    <span class="span-brown">Coaching for 2h</span> - get this
+                    option so our PRO would help you to stay on the obtained
+                    rank;
+                  </li>
+
+                  <li class="card-info-list-item">
+                    <span class="span-green">Stream </span>- pick this option to
+                    see how our booster is executing your order live. Stream
+                    record is available
+                  </li>
+
+                  <li class="card-info-list-item">
+                    <span class="span-orange">Specific legend</span>
+                    - up to rank 16000, this option is free. Get the desired
+                    rank with the legend you want.
+                  </li>
+                </ul>
+              </div>
+
+              <div class="card-info-ul" style="margin-bottom: 70px">
+                <h3 class="title-third margin-bottom-8px">Requirements</h3>
+
+                <ul class="card-info-list card-info-list__done">
+                  <li class="card-info-list-item">
+                    Active
+                    <span class="span-orange">Apex Legends</span> account.
+                  </li>
+                </ul>
+              </div>
+
+              <div class="card-info-ul" style="margin-bottom: 70px">
+                <h3 class="title-third margin-bottom-8px">HOW IT WORKS</h3>
+
+                <ul class="card-info-list card-info-list__grey">
+                  <li class="card-info-list-item">
+                    After the purchase, we will contact you via live chat or
+                    e-mail to schedule it;
+                  </li>
+                  <li class="card-info-list-item">
+                    Order execution will be started at the agreed time;
+                  </li>
+                  <li class="card-info-list-item">
+                    If you chose the piloted method, our booster will take your
+                    character. In the case of the self-play option, you will
+                    simply be invited to the booster's squad in the game.
+                  </li>
+                  <li class="card-info-list-item">
+                    We'll notify you about the order completion or you'll see it
+                    yourself;
+                  </li>
+                  <li class="card-info-list-item">
+                    Enjoy the results of Apex MMR boost! And don’t forget to
+                    rate our services on <a href="#">Trustpilot.</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <aside class="basket basket-modification">
+          <div
+            class="tabs-border-item"
+            style="font-weight: 700; margin-bottom: 22px"
+          >
+            <a href="#">Available on PC, PlayStation, XBOX</a>
+          </div>
+
+          <div class="basket-content">
+            <div class="basket-content-img">
+              <img src="img/basket/1.png" alt="" />
+
+              <div class="basket-content-img-icon">
+                <i class="fa-solid fa-bomb"></i> Hot
+              </div>
+
+              <img
+                src="icons/basket/logo.svg"
+                alt=""
+                class="basket-content-img-logo"
+              />
+            </div>
+
+            <div class="basket-content-choose padding-0-30px">
+              <p class="basket-content-title">YOUR PLATFORM</p>
+
+              <div class="basket-content-choose-buttons" id="buttons1">
+                <button
+                  class="basket-content-choose-button basket-content-choose-button__active"
+                >
+                  PC
+                </button>
+
+                <button class="basket-content-choose-button">XBOX</button>
+
+                <button class="basket-content-choose-button">PS4/PS5</button>
+              </div>
+            </div>
+
+            <div class="basket-content-choose padding-0-30px">
+              <p class="basket-content-title">BOOST METHOD</p>
+
+              <div class="basket-content-choose-buttons" id="buttons2">
+                <button
+                  class="basket-content-choose-button basket-content-choose-button__active"
+                >
+                  Piloted
+                </button>
+
+                <button class="basket-content-choose-button">
+                  Self-play <span>+$730.81</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="basket-content-choose padding-0-30px">
+              <p class="basket-content-title">EXECUTION OPTIONS</p>
+
+              <div class="basket-content-choose-buttons" id="buttons3">
+                <div
+                  class="basket-content-choose-buttons-item basket-content-choose-buttons-item__active"
+                >
+                  <input
+                    type="radio"
+                    class="basket-content-choose-buttons-input"
+                    id="radioInput"
+                    checked
+                  />
+                  <label for="radioInput">Normal</label>
+                </div>
+
+                <div class="basket-content-choose-buttons-item">
+                  <input
+                    type="radio"
+                    class="basket-content-choose-buttons-input"
+                    id="radioInput2"
+                  />
+                  <label for="radioInput2">Express</label>
+
+                  <p class="basket-content-choose-buttons-text">+$10.00</p>
+                </div>
+
+                <div class="basket-content-choose-buttons-item">
+                  <input
+                    type="radio"
+                    class="basket-content-choose-buttons-input"
+                    id="radioInput3"
+                  />
+                  <label for="radioInput3">Super Express</label>
+
+                  <p class="basket-content-choose-buttons-text">+$313.00</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="basket-content-price padding-0-30px">
+              <p class="basket-content-title">SKILL RATING</p>
+
+              <div class="basket-content-price-block">
+                <div class="basket-content-price-block-container">
+                  <div class="basket-content-price-block-input">
+                    <p class="basket-content-price-block-title">New Rank</p>
+
+                    <input
+                      type="number"
+                      placeholder="0"
+                      min="0"
+                      max="100000"
+                      id="startInput"
+                      style="width: 300px"
+                    />
+                  </div>
+                </div>
+
+                <div
+                  class="basket-content-price-block-input__range"
+                  id="slider"
+                ></div>
+              </div>
+            </div>
+
+            <div class="basket-content-text padding-0-30px">
+              <p class="basket-content-text-title">YOUR NEW RANK</p>
+
+              <p class="basket-content-text-title">Possible Apex predator</p>
+            </div>
+
+            <div class="basket-content-check padding-0-30px">
+              <form>
+                <div class="basket-content-check-select" data-state="">
+                  <div
+                    class="basket-content-check-select-title"
+                    data-default="Option 0"
+                  >
+                    Level 1 - 20
+                  </div>
+                  <div class="basket-content-check-select-content">
+                    <input
+                      id="singleSelect0"
+                      class="basket-content-check-select-input"
+                      type="radio"
+                      name="singleSelect"
+                      checked
+                    />
+                    <label
+                      for="singleSelect0"
+                      class="basket-content-check-select-label"
+                      >Level 1 - 20</label
+                    >
+                    <input
+                      id="singleSelect1"
+                      class="basket-content-check-select-input"
+                      type="radio"
+                      name="singleSelect"
+                    />
+                    <label
+                      for="singleSelect1"
+                      class="basket-content-check-select-label"
+                      >Level 20 - 40</label
+                    >
+                    <input id="singleSelect2"
+                    class="basket-content-check-select-input"" type="radio"
+                    name="singleSelect" />
+                    <label
+                      for="singleSelect2"
+                      class="basket-content-check-select-label"
+                      >Level 40 - 60</label
+                    >
+                    <input id="singleSelect3"
+                    class="basket-content-check-select-input"" type="radio"
+                    name="singleSelect" />
+                    <label
+                      for="singleSelect3"
+                      class="basket-content-check-select-label"
+                      >Level 60 - 80</label
+                    >
+                    <input id="singleSelect4"
+                    class="basket-content-check-select-input"" type="radio"
+                    name="singleSelect" />
+                    <label
+                      for="singleSelect4"
+                      class="basket-content-check-select-label"
+                      >Level 80 - 100</label
+                    >
+                  </div>
+                </div>
+              </form>
+            </div>
+
+            <div class="basket-content-total">
+              <p class="basket-content-total-price">$1,044.25</p>
+
+              <button class="gold-button gold-button__border">
+                <span>Add to cart</span>
+              </button>
+
+              <button class="gold-button" style="margin-bottom: 15px">
+                <span>BUY NOW</span>
+              </button>
+
+              <div class="basket-content-total-text">
+                <i
+                  class="fa-solid fa-hourglass-start"
+                  style="color: #85919c"
+                ></i>
+                10 days order completion
+              </div>
+            </div>
+          </div>
+
+          <div class="basket-question">
+            <div class="basket-question-text">
+              <p class="basket-question-title">Any questions?</p>
+
+              <p class="basket-question-title">Chat before ordering</p>
+            </div>
+
+            <button class="blue-button">
+              <i class="fa-brands fa-rocketchat"></i>
+              CHAT
+            </button>
+          </div>
+        </aside>
+      </div>
+    </main>
+
+    <script src="tabsBorder.js"></script>
+    <script src="footerInput.js"></script>
+    <script src="headerInput.js"></script>
+    <script src="tabsBorder.js"></script>
+    <script src="titleSecMargin.js"></script>
+    <script src="burger.js"></script>
+    <script src="basketButtons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.1/nouislider.min.js"></script>
+    <script src="checkBoxInput.js"></script>
+    <script src="gameCardItems.js"></script>
+    <script src="mobileMargins.js"></script>
+    <script src="radioInput.js"></script>
+    <script src="rangeInputMod.js"></script>
+    <script src="select.js"></script>
+    <script src="headerCardModChooseGame.js"></script>
+  </body>
+</html>

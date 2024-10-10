@@ -1,0 +1,124 @@
+.card-info
+    background: url(../img/card-info/1.png) 
+    background-repeat: no-repeat
+    background-position-y: -8rem
+    padding: 3.8rem 0 0 19.5rem
+    width: 100%
+    @include mobile
+        padding: 0 1.5rem
+    &-text
+        margin-bottom: 3.8rem
+        &-rating
+            display: flex
+            align-items: center
+            color: $color-blue-dark
+            font-size: 1.6rem
+            @include mobile
+                display: block
+                margin-bottom: 157.4rem
+            &-icons
+                display: flex
+                align-items: center
+            span
+                font-weight: 700
+            &-stars
+                display: flex
+                align-items: center
+                gap: .4rem 
+                margin-left: .8rem 
+                margin-right: .9rem
+                div
+                    padding: .6rem
+                    border-radius: .7rem
+                    margin-right: 0 !important
+                    img
+                        width: 1.2rem 
+                        height: 1.2rem
+    &-content
+        width: 88.2rem
+        @include mobile
+            width: 34.5rem
+        &-descr
+            margin-bottom: 12.2rem
+            &-text
+                color: $color-blue-dark
+                font-size: 1.6rem 
+                margin-bottom: 1.8rem
+                @include mobile
+                    width: 34.5rem
+                    margin-bottom: 2.9rem
+    &-ul
+        &:not(:last-child)
+            margin-bottom: 3.3rem
+            @include mobile
+                &:not(:last-child)
+                    margin-bottom: 2.3rem !important
+    &-list
+        padding-left: 2em
+        list-style-image: url(../icons/card-info-list/skull.svg)
+        &__done
+           list-style-image: url(../icons/card-info-list/check.svg) 
+        &__grey
+            list-style-image: url(../icons/card-info-list/mark.svg)
+        &-item
+            font-size: 1.6rem
+            padding-left: 1.7rem
+            @include mobile
+                width: 32.8rem
+            a
+                color: $color-blue
+                text-decoration: underline
+                transition: all .3s
+                &:hover
+                    cursor: pointer
+                    text-decoration: none
+                    color: $color-blue-dark
+                &:active
+                    color: $color-blue
+            &:not(:last-child)
+                margin-bottom: 1.5rem
+                
+
+.card-info-text > .title-secondary
+    @include mobile
+        font-size: 3.6rem
+        margin-bottom: 1.3rem
+
+
+
+
+.also
+    &-cards
+        overflow-x: auto
+        overflow-y: hidden
+        width: 131.5rem
+        gap: 0
+        &::-webkit-scrollbar
+            display: none
+        @include mobile
+            width: 34.5rem
+        &-button
+            position: absolute
+            right: 13rem
+            &__first
+                position: absolute
+                left: 38rem
+
+.also  .game-card
+    &:not(:last-child)
+        margin-right: 3rem
+
+.card-reviews  .comment
+    width: 40.4rem
+
+.card-how-works
+    padding: 0
+    padding-right: 19.5rem
+    @include mobile
+        padding-right: 0
+
+.card-why
+    padding: 0
+    padding-right: 19.5rem
+    @include mobile
+        padding-right: 0

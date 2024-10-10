@@ -1,0 +1,28 @@
+.tabs
+    display: flex
+    flex-wrap: nowrap
+    gap: 1.9rem
+    @include mobile
+        overflow-x: auto
+        &::-webkit-scrollbar
+            display: none
+    &-item
+        border: 1px solid $color-blue-02
+        padding: 1.3rem 1.5rem
+        font-size: 1.8rem
+        font-weight: 700
+        color: $color-blue-dark
+        background: $color-white
+        transition: all .3s
+        border-radius: .5rem
+        @include mobile
+            min-width: 16.2rem
+        &:focus
+            outline: none
+        &:hover
+            background: $color-blue-dark
+            color: $color-white
+            cursor: pointer
+        &:active
+            background: $color-white
+            color: $color-blue-dark

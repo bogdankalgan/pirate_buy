@@ -1,0 +1,50 @@
+.cart-steps-three-item
+    display: flex
+    align-items: center
+    padding: 2.7rem 2.9rem 2.7rem 3.3rem
+    border: 1px solid $color-blue-dark
+    border-radius: .7rem
+    width: 38.3rem 
+    height: 9rem
+    @include mobile
+        width: 28.5rem
+        height: 11.5rem
+        display: block
+        &:not(:last-child)
+            margin-bottom: 1rem
+    &-input
+        appearance: none
+        position: relative
+        margin-right: 1.6rem
+        &:checked
+            &::after
+                opacity: 1
+            &::before
+                border-color: $color-blue-dark
+        &::before
+            content: " "
+            display: inline-block
+            width: 2.2rem
+            height: 2.2rem
+            border-radius: 50%
+            background: none
+            border: 1px solid $color-grey-vs
+            position: relative
+        &::after
+            content: " "
+            display: inline-block
+            width: 1.6rem
+            height: 1.6rem
+            background: $color-blue-dark
+            border-radius: 50%
+            position: absolute
+            left: .3rem
+            top: .3rem
+            opacity: 0
+    &-img
+        margin-right: .8rem
+    &-text
+        color: $color-grey-vs
+        font-size: 1.2rem
+        &::first-letter
+            text-transform: uppercase

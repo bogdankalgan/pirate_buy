@@ -1,0 +1,232 @@
+.search-button
+    @include borderBcgNone
+    color: $color-white
+    transition: all .3s
+    font-size: 1.5rem
+    @include mobile
+        margin-right: 2.5rem
+    &:focus
+        outline: none
+    &:hover
+        color: $color-green
+    &:active
+        color: $color-white
+
+.trash-button
+    @include borderBcgNone
+    color: $color-white
+    font-size: 1.5rem
+    position: relative
+    &-count
+        width: 1.4rem 
+        height: 1.4rem
+        color: $color-blue-dark
+        background: $color-grey-vs
+        font-size: 1.1rem
+        font-weight: 600
+        border-radius: 50%
+        display: flex
+        align-items: center
+        justify-content: center
+        position: absolute
+        top: 0
+        right: 0
+        &__active
+            background: $color-yellow
+            box-shadow: 0 0 $color-yellow
+            display: none
+    &:focus
+        @include focusState
+    &:hover
+        @include hoverState
+    &:active
+        @include activeState
+    @include mobile
+        margin-right: 0
+.sign-in
+    border: 1px solid $color-yellow
+    border-radius: .7rem
+    background: $bcg-button
+    color: $color-white
+    font-size: 1.4rem
+    font-weight: 600
+    padding: 1rem 1.7rem
+    box-shadow: inset 0px -5px  #0B1D31
+    transition: all .3s
+    &:focus
+        @include focusState
+    &:hover
+        @include hoverState
+    &:active
+        @include activeState
+        box-shadow: none
+    @include mobile
+        display: none
+
+.gold-button
+    background: $color-yellow
+    border: none
+    color: $color-brown
+    padding: 1.3rem 3.3rem
+    border-radius: .7rem
+    font-size: 1.6rem
+    font-weight: 600
+    box-shadow: 0 .2rem $color-yellow-dark
+    overflow: hidden
+    position: relative
+    transition: all .3s
+    text-transform: uppercase
+    @include mobile
+        margin-bottom: 9rem
+    &:focus
+        outline: none
+    &:hover
+        cursor: pointer
+        &::before
+            display: none
+    &:active
+        &::before
+            display: block
+    span
+        z-index: 1
+        position: relative
+    &::before
+        content:  " "
+        width: 10.3rem
+        height: 10.3rem
+        background: $color-white
+        filter: blur(47px)
+        position: absolute
+        top: -50%
+        left: 1.9rem
+        z-index: 0
+    &__border
+        background: none
+        border: 1px solid $color-yellow
+        padding: 1.3rem 1.5rem 1.3rem 1.7rem
+        &::before
+            display: none
+        @include mobile
+            margin-bottom: 1.5rem
+
+
+.next-button
+    width: 4rem
+    height: 4rem
+    border: none
+    border-radius: .6rem
+    background: $color-blue
+    color: $color-white
+    font-size: 2rem
+    transition: all .3s
+    &:focus
+        outline: none
+    &:hover
+        color: $color-orange
+        cursor: pointer
+    &:active
+        color: $color-white
+
+
+.show-more
+    background: none
+    border: 1px solid $color-blue
+    font-size: 1.8rem
+    font-weight: 700
+    padding: 1.8rem 2.5rem
+    border-radius: .5rem
+    transition: all .3s
+    &:focus
+        outline: none
+    &:hover
+        background: $color-blue
+        cursor: pointer
+    &:active
+        background: none
+    &-container
+        text-align: center
+
+.slider
+    background: none
+    border: none
+    color: $color-grey-vs
+    font-size: 4rem
+    transition: all .3s
+    @include mobile
+        display: none
+    &:focus
+        outline: none
+    &:hover
+        color: $color-blue-dark
+    &:active
+        color: $color-grey-vs
+
+.blue-button
+    background: $color-blue
+    border: none
+    padding: 1.2rem 1.7rem
+    color: $color-white
+    font-size: 1.6rem 
+    font-weight: 600
+    border-radius: .7rem
+    position: relative
+    transition: all .3s
+    text-transform: uppercase
+    &::before
+        content: " "
+        width: 12rem 
+        height: 8rem
+        background: $color-white
+        filter: blur(60px)
+        top: -1.3rem 
+        left: 1.5rem
+        position: absolute
+    &:focus
+        outline: none
+    &:hover
+        color: $color-orange
+        cursor: pointer
+    &:active
+        color: $color-white
+        &::before
+            display: none
+    @include mobile
+        &::before
+            display: none
+
+.read-more
+    background: none
+    border: none
+    font-size: 1.2rem
+    line-height: 2.3rem
+    font-weight: 700
+    color: $color-white
+    transition: all .3s
+    &:focus
+        outline: none
+    &:hover
+        color: $color-blue
+    &:active
+        color: $color-white
+
+.subscribe 
+    background: $color-grey
+    border: 1px solid rgba(255, 255, 255, .5)
+    border-radius: .7rem
+    color: $color-white
+    font-size: 1.4rem
+    font-weight: 600
+    padding: 1.5rem 2.1rem
+    box-shadow: 0px 5px  $color-blue-shadow
+    transition: all .3s
+    @include mobile
+        padding: 1.4rem 1.3rem
+    &:focus
+        outline: none
+    &:hover
+        border-color: $color-orange
+    &:active
+        box-shadow: none
+
+
+

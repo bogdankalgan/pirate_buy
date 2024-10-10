@@ -1,0 +1,178 @@
+.cart-content
+    padding-top: 3.8rem
+    background: $color-white-light
+    width: 100%
+    & > .bread-crumbs
+        margin-bottom: 2.5rem
+        padding-right: 0
+
+.cart-text
+    margin-bottom: 2.2rem
+
+.cart-steps
+    &-top
+        display: flex
+        align-items: center
+        justify-content: space-between
+        margin-bottom: 2.3rem
+        @include mobile
+            display: block
+    &-one
+        padding: 4.3rem 3rem 3.4rem 4rem
+        background: $color-white
+        border: 1px solid $color-white-border
+        border-radius: .7rem
+        height: 33.5rem
+        @include mobile
+            height: 49rem
+            padding: 4.3rem 2.3rem 3.3rem 3rem
+            &:not(:last-child)
+                margin-bottom: 3rem
+        &-top
+            display: flex
+            align-items: center
+            padding-bottom: 5.6rem
+            border-bottom: 1px solid $color-white-border
+            
+            @include mobile
+                display: block
+                padding-bottom: 3rem
+            &-left
+                margin-right: 9rem
+                @include mobile
+                    margin-right: 0
+                &-block
+                    display: flex
+                    align-items: center
+                    @include mobile
+                        margin-bottom: 1.5rem
+                    img
+                        margin-right: 2rem
+            &-right
+                display: flex
+                align-items: center
+                &-price
+                    color: $color-blue-dark
+                    font-size: 1.8rem
+                    font-weight: 700
+                    margin-right: 4.9rem
+                &-button
+                    background: none
+                    border-radius: 50%
+                    border: 4px solid $color-grey-vs
+                    color: $color-grey-vs
+                    font-size: 1.8rem
+                    font-weight: 700
+                    transition: all .3s
+                    @include mobile
+                        display: none
+                    &:focus
+                        outline: none
+                    &:hover
+                        color: $color-orange
+                    &:active
+                        color: $color-grey-vs
+        &-bottom
+            display: flex
+            align-items: center
+            justify-content: space-between
+            @include mobile
+                display: block
+            &-items
+                display: flex
+            &-left
+                display: flex
+                align-items: center
+                @include mobile
+                    margin-bottom: 3rem
+                    padding-top: 2.1rem
+            &-right
+                &-block
+                    display: flex
+                    align-items: center
+                    justify-content: space-between
+                    &:not(:last-child)
+                        margin-bottom: .2rem
+                    &-title
+                        color: $color-grey-vs
+                        font-size: 1.6rem
+                        font-weight: 700
+                        margin-right: 6.3rem
+                        @include mobile
+                            margin-right: 0
+                    &-price
+                        color: $color-blue-dark
+                        font-size: 2.4rem
+                        font-weight: 700
+                        img
+                            margin-right: .7rem
+        
+    &-two
+        padding: 4.5rem 2.7rem 6.5rem 3.4rem 
+        height: 33.5rem
+        @include mobile 
+            padding: 4.5rem 2.4rem 5rem 3rem
+            height: 32rem
+        &-block
+            &:not(:last-child)
+                margin-bottom: 3rem
+            &-title
+                font-size: 1.6rem
+                font-weight: 600
+                color: $color-blue-dark
+                margin-bottom: .4rem
+                white-space: nowrap
+    &-three
+        padding: 4.2rem 3.5rem 4rem 4.2rem 
+        height: 40rem
+        @include mobile
+            padding: 4rem 3rem 3.7rem 3rem
+            height: 68.5rem
+        &-text
+            color: $color-grey-vs
+            font-size: 1.4rem
+            width: 38.3rem
+            @include mobile
+                width: 100%
+            span
+                font-weight: 700
+        &-items
+            display: flex
+            justify-content: space-between
+            align-items: center
+            margin-bottom: 3rem
+            @include mobile
+                display: block
+        & > .cart-steps-title
+            margin-bottom: 2.5rem
+    &-title
+        color: $color-blue-dark
+        font-size: 1.8rem
+        font-weight: 800
+        margin-bottom: 1.5rem
+    &-subtitle
+        color: $color-blue-dark
+        font-size: 1.6rem
+        font-weight: 700
+        margin-bottom: 1.6rem
+        br
+            display: none
+        @include mobile
+            br
+                display: block
+    &-ul
+        display: flex
+        flex-wrap: wrap
+        padding-left: 1rem
+        width: 26.3rem
+        @include mobile
+            width: 16.3rem
+        &-item
+            color: $color-blue-dark
+            font-size: 1.2rem
+            &:not(:last-child)
+                margin-right: 1.6rem
+    &-pay
+        @include mobile
+            margin-bottom: 2rem
+            width: 100%

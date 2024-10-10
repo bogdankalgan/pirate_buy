@@ -1,0 +1,36 @@
+.tabs-border
+    display: flex
+    align-items: center
+    gap: 6.5rem
+    margin-bottom: 1.6rem
+    @include mobile
+        gap: 0
+        width: 34.5rem
+        overflow-x: auto
+        margin-bottom: 2.7rem
+        &::-webkit-scrollbar
+            display: none
+    &-item
+        padding-bottom: .3rem
+        transition: all .3s
+        @include mobile
+            white-space: nowrap
+            &:not(:last-child)
+                margin-right: 3.6rem
+        a
+            color: $color-grey-vs
+            font-size: 1.8rem 
+            font-weight: 800
+            transition: all .3s
+            &:hover
+                cursor: pointer
+                color: $color-blue-dark
+                text-decoration: none
+            &:active
+                color: $color-grey-vs
+        &__active
+            border-bottom: 3px solid $color-blue-dark
+            a
+                color: $color-blue-dark
+                font-size: 1.8rem
+                font-weight: 800

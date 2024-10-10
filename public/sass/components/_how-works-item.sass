@@ -1,0 +1,45 @@
+.how-works-item 
+    padding: 6.1rem 4.4rem 6.7rem 9.7rem
+    background: $color-grey-light
+    position: relative
+    z-index: 1
+    @include mobile
+        padding: 5.5rem 3.9rem 6rem 8.7rem
+    &-icon
+        @include mobile
+            img
+                width: 9.5rem 
+                height: 7.9rem
+    &-title
+        @include cardTitles(2.1rem)
+        margin-bottom: .4rem
+        @include mobile
+            font-size: 1.8rem
+            white-space: nowrap
+    &-subtitle
+        color: $color-grey-vs
+        font-size: 1.6rem
+        @include mobile
+            white-space: nowrap
+        br
+            display: none
+            @include mobile
+                display: block
+    &::before
+        content: " "
+        width: 99%
+        height: 98%
+        position: absolute
+        left: .2rem
+        top: .2rem
+        clip-path: inherit
+        background: $color-white-light
+        z-index: -1
+    &:nth-child(1)
+        clip-path: polygon(100% 19%, 100% 100%, 0 79%, 0 0)
+    &:nth-child(3)
+        clip-path: polygon(100% 19%, 100% 100%, 0 79%, 0 0)
+    &:nth-child(2)
+        clip-path: polygon(100% 0, 100% 80%, 0 100%, 0 19%)
+    &:nth-child(4)
+        clip-path: polygon(100% 0, 100% 80%, 0 100%, 0 19%)

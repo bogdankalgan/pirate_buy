@@ -1,0 +1,166 @@
+.hero
+    overflow: hidden
+    background: url(../img/hero/1.png), $bcg center center 
+    background-repeat: no-repeat
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 18.7rem 19.5rem 16.4rem 19.5rem
+    height: 71rem
+    margin-bottom: 8rem
+    @include  mobile
+        display: block
+        padding: 6.6rem 4.3rem
+        background: url(../img/hero/hero-bcg-mobile.png), $bcg  
+        background-position-y: bottom
+        background-position-x: center
+        background-repeat: no-repeat
+        height: 60rem
+        margin-bottom: 5rem
+    &-rating
+        &-icon
+            @include mobile
+                width: 15rem
+                height: 3.5rem
+        &-stars
+            display: flex
+            
+
+.choose-game
+    margin-bottom: 9rem
+    @include mobile
+        margin-bottom: 7rem    
+    &-items
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        @include mobile
+            display: grid
+            grid-template-columns:  repeat(2, 1fr)
+            gap: 1.5rem
+
+
+.how-works
+    &-items
+        display: flex
+        @include mobile
+            overflow-x: auto
+            &::-webkit-scrollbar
+                display: none
+
+.why
+    padding: 0 30.4rem 0 34.5rem
+    @include mobile
+        padding: 0 3rem 0 2.5rem
+    &-items
+        gap: 15.5rem 5.5rem
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        @include mobile
+            gap: 0
+
+
+.reviews
+    padding: 0 14.7rem 0 13.3rem
+    margin-bottom: 10.9rem
+    @include mobile
+        padding: 0
+        margin-bottom: 9rem
+    &-subtitle
+        color: $color-blue-dark
+        font-size: 1.6rem
+        line-height: 2.6rem
+        margin-right: .3rem
+    &-text
+        display: flex
+        align-items: end
+        padding-left: 6.2rem
+        margin-bottom: 2.8rem
+        @include mobile
+            display: block
+            text-align: center
+            padding: 0
+    &-comments
+        display: flex
+        align-items: center
+        gap: 3rem
+        @include mobile
+            overflow-x: auto
+            &::-webkit-scrollbar
+                display: none
+
+.faq
+    &-content
+        display: flex
+        justify-content: space-between
+        @include mobile
+            display: block
+    &-questions
+        display: flex
+        flex-direction: column
+        gap: 2rem
+
+.blog
+    padding: 0 14.7rem
+    @include mobile
+        padding: 0 0 0 1.5rem
+    &-text
+        padding-left: 4.8rem
+        @include mobile
+            padding-left: 0
+    &-cards
+        display: flex
+        flex-wrap: wrap
+        gap: 3rem
+        margin-bottom: 3.9rem
+        @include mobile
+            flex-wrap: nowrap
+            overflow-x: auto
+            &::-webkit-scrollbar
+                display: none
+
+
+.modal
+    &-container
+        background: url(../img/modal/bcg.png) center center no-repeat
+        width: 100%
+        padding: 8rem 0 8.4rem 13.7rem
+        border-radius: 1rem
+        @include mobile
+            background: url(../img/modal/bcg-mobile.png)
+            padding: 5rem 3rem 6.3rem 3rem
+    &-title
+        color: $color-white
+        margin-bottom: 2.2rem
+        text-transform: uppercase
+        @include mobile
+            font-size: 3rem
+            
+        span
+            color: $color-yellow
+    &-descr
+        color: $color-white
+        font-size: 1.8rem
+        line-height: 2.8rem
+        margin-bottom: 2.8rem
+        @include mobile
+            font-size: 1.6rem
+            
+
+.payment
+    &-items
+        display: flex
+        gap: 2rem
+        @include mobile
+            overflow-x: auto
+            &::-webkit-scrollbar
+                display: none 
+    &-item
+        background: $color-blue-3c
+        min-width: 15.2rem
+        min-height: 8.5rem
+        display: flex
+        justify-content: center
+        align-items: center
+        border-radius: .7rem

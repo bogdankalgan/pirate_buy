@@ -1,0 +1,362 @@
+.basket
+    position: absolute
+    right: 19.5rem
+    top: 31.9rem
+    width: 36rem
+    @include mobile
+        width: 34.5rem
+        right: 1.5rem
+        top: 37.3rem
+    &-content
+        background: $color-white-light
+        border: 1px solid rgba(0, 0, 0, .08)
+        margin-bottom: 2rem
+        &-img
+            position: relative
+            margin-bottom: 3rem
+            img
+                &:nth-child(1)
+                    width: 100%
+            &-icon
+                color: $color-white
+                font-size: 1.4rem 
+                font-weight: 500
+                background: $color-orange
+                padding: .3rem 1.2rem
+                display: inline-block
+                border-radius: .3rem
+                position: absolute
+                top: 2rem 
+                left: 2rem
+            &-logo
+                position: absolute
+                right: 2rem 
+                top: 1.5rem
+        &-price
+            margin-bottom: 6rem
+        &-text
+            margin-bottom: 3.4rem
+            &-title
+                color: $color-grey-vs
+                font-size: 1.6rem
+                font-weight: 700
+                &:nth-child(1)
+                    margin-bottom: .5rem
+                &:nth-child(2)
+                    font-weight: 600
+                    color: $color-orange
+        &-title
+            color: $color-grey-vs
+            font-size: 1.6rem
+            font-weight: 600
+            margin-bottom: .7rem
+            text-transform: uppercase
+        &-buttons
+            display: flex
+            flex-wrap: wrap
+        &-choose
+            &:not(:last-child)
+                margin-bottom: 4rem
+            &-button
+                background: none
+                border: 1px solid $color-grey-border
+                color: $color-blue-dark
+                font-size: 1.6rem 
+                border-radius: .3rem
+                transition: all .3s
+                &:focus
+                    outline: none
+                &:hover
+                    border-color: $color-blue-dark
+                &:active
+                    border-color: $color-grey-border
+                &:not(:last-child)
+                    margin-right: .9rem
+                &__active
+                    border-color: $color-blue-dark
+                    font-weight: 600
+                span
+                    color: $color-grey-vs
+            &-buttons
+                color: $color-blue-dark
+                font-size: 1.6rem
+                label
+                    display: flex
+                    align-items: center
+                    position: relative
+                    &::before
+                        content:  " "
+                        display: inline-block
+                        width: 2.2rem
+                        height: 2.2rem   
+                        background: none
+                        border-radius: 50%
+                        border: 2px solid $color-grey-border
+                        margin-right: 1.4rem
+                    &::after
+                        content: " "
+                        display: inline-block
+                        width: 1.6rem 
+                        height: 1.6rem
+                        background: $color-blue-dark
+                        border-radius: 50%
+                        position: absolute
+                        left: .3rem
+                        opacity: 0
+                &-item
+                    display: flex
+                    align-items: center
+                    justify-content: space-between
+                    padding-bottom: .7rem
+                    border-bottom: 1px solid rgba(11, 34, 57, .2)
+                    &:not(:last-child)
+                        margin-bottom: 1rem
+                    &__active
+                        font-weight: 600
+                &-input
+                    position: absolute
+                    opacity: 0
+                    cursor: pointer
+                    &:checked + label::after
+                        opacity: 1
+                    &:checked + label::before
+                        border-color: $color-blue-dark 
+        &-price
+            &-block
+                input[type="range" i]
+                    width: 100%
+                    -webkit-appearance: none
+                    appearance: none
+                    height: 16px
+                    background: $color-yellow-light-more
+                    border-radius: 8px
+                    outline: none
+                    padding: 0
+                    margin: 0
+                    &::-webkit-slider-thumb
+                        -webkit-appearance: none
+                        appearance: none
+                        width: 1.7rem 
+                        height: 1.7rem
+                        background-color: $color-yellow
+                        border-radius: 50%
+                        cursor: pointer
+                        position: relative
+                        box-shadow: 0 0 0 1.4rem $color-yellow-light-more
+                &-container
+                    margin-bottom: 2rem
+                &-arrow
+                    font-size: 1.5rem
+                    margin-left: 1.8rem 
+                    margin-right: 1.5rem
+                &-title
+                    color: $color-grey-vs
+                    font-size: 1.2rem
+                    font-weight: 500
+                &-input
+                    input
+                        background: $color-yellow-light
+                        border: 1px solid $color-yellow 
+                        border-radius: .3rem
+                        width: 10rem
+                        height: 4rem
+                        padding: .8rem 0 .8rem 1rem
+                        font-size: 1.6rem 
+                        color: $color-blue-dark
+                        font-weight: 600
+                        &::placeholder
+                            color: $color-blue-dark
+                            font-size: 1.6rem 
+                            font-weight: 600
+                &-container
+                    display: flex
+                    align-items: center
+        &-check
+            margin-bottom: 5.4rem
+            &-select
+                position: relative
+                width: 100%
+                height: 4rem
+                background: url(../icons/basket/check-grey.svg) centet center no-repeat
+                background-position-x: 26.7rem
+                background-size: .8rem 1.2rem
+                color: $color-blue-dark
+                font-size: 1.6rem
+                &[data-state="active"] &-title
+                    &::before
+                        transform: translate(-3px, -50%) rotate(-45deg)
+                    &::after
+                        transform: translate(3px, -50%) rotate(45deg)
+                &[data-state="active"] &-content
+                    opacity: 1
+                &[data-state="active"] &-label + &-select + &-label
+                    max-height: 4rem
+                    border-top-width: .1rem
+                &-title
+                    display: flex
+                    align-items: center
+                    width: 100%
+                    height: 100%
+                    padding: 8px 16px
+                    border-radius: 5px
+                    border: solid 1px #c7ccd1
+                    cursor: pointer
+                    &::before, &::after
+                        ontent: ""
+                        position: absolute
+                        top: 50%
+                        right: 16px
+                        display: block
+                        width: 10px
+                        height: 2px
+                        transition: all 0.3s ease-out
+                        background-color: #333333
+                        transform: translate(-3px, -50%) rotate(45deg)
+                    &::after
+                        transform: translate(3px, -50%) rotate(-45deg)
+                &-content
+                    position: absolute
+                    top: 40px
+                    left: 3px
+                    display: flex
+                    flex-direction: column
+                    width: calc(100% - 6px)
+                    background-color: #ffffff
+                    border: 1px solid #c7ccd1
+                    border-top: none
+                    border-bottom-left-radius: 5px
+                    border-bottom-right-radius: 5px
+                    transition: all 0.3s ease-out
+                    opacity: 0
+                    z-index: 8
+                &-input
+                    display: none
+                    &:checked + &-label
+                        background-color: #dedede
+                    &:disabled + &-label
+                        opacity: 0.6
+                        pointer-events: none
+                &-label
+                    color: $color-blue-dark
+                    font-size: 1.6rem
+                    padding-bottom: .9rem
+                    border-bottom: 1px solid #DAE3EA
+                    padding-left: 2.1rem
+                    padding-top: .8rem 
+                    transition: all .3s
+                    &:hover
+                        color: $color-blue
+            &-item
+                display: flex
+                align-items: center
+                position: relative
+                color: $color-blue-dark
+                font-size: 1.6rem
+                padding-bottom: .7rem
+                border-bottom: 1px solid rgba(11, 34, 57, .2)
+                &:not(:last-child)
+                    margin-bottom: 1rem
+                &__active
+                    font-weight: 600
+                &-text
+                    display: flex
+                    align-items: center
+                    justify-content: space-between
+                    width: 100%
+                input
+                    position: absolute
+                    z-index: -1
+                    opacity: 0
+                input + label
+                    display: inline-flex
+                    align-items: center
+                    user-select: none
+                    margin-right: 1.5rem
+                input + label::before
+                    content: ''
+                    display: inline-block
+                    width: 2rem
+                    height: 2rem
+                    flex-shrink: 0
+                    flex-grow: 0
+                    border: 2px solid $color-grey-border
+                    border-radius: .5rem
+                input:checked + label::before
+                    background: url(../icons/basket/check.svg) center center no-repeat, $color-blue-dark
+                    background-size: 1.2rem 1.2rem
+                    border: none
+        &-total
+            background: $color-white-basket
+            padding: 2.5rem 2.5rem 2.8rem 2.9rem
+            &-price
+                color: $color-blue-dark
+                font-size: 3.6rem 
+                font-weight: 700
+                margin-bottom: .8rem
+            &-text
+                display: flex
+                align-items: center
+                color: $color-grey-vs
+                font-size: 1.4rem
+                font-weight: 700
+                i
+                    transform: rotate(30deg)
+                    margin-right: .7rem
+    &-question
+        display: flex
+        align-items: center
+        justify-content: space-between
+        &-title
+            color: $color-blue-dark
+            font-size: 1.6rem 
+            &:nth-child(1)
+                font-size: 1.2rem
+            
+
+.basket-modification .basket-content-text
+    margin-bottom: 2.1rem
+    
+
+
+.noUi
+    &-base
+        background: $color-yellow-light-more
+    &-target
+        height: .5rem
+        border: none
+        border-radius: .5rem
+    &-connect
+        background: $color-yellow
+    &-handle
+        background: $color-yellow
+        width: 1.7rem !important
+        height: 1.7rem !important
+        border-radius: 50%
+        box-shadow: none
+        border: none
+        &::before, &::after
+            background: $color-yellow-light-more
+            border-radius: 50%
+            width: 3.1rem
+            height: 3.1rem
+            left: -7px
+            top: -7px
+            z-index: -1
+        &::before
+            left: 0
+            left: -7px
+            top: -7px
+    &-marker
+        display: none
+    &-value
+        color: $color-blue-dark
+        font-size: 1.4rem
+        font-weight: 500
+    
+
+
+
+
+
+
+  

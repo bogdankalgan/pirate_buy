@@ -1,0 +1,29 @@
+@mixin borderBcgNone()
+    background: none
+    border: none
+    transition: all .3s
+    
+
+@mixin focusState()
+    outline: none
+    
+
+@mixin hoverState()
+    color: $color-green
+    cursor: pointer
+
+@mixin activeState()
+    color: $color-white
+    
+    
+@mixin mobile()
+    @media (max-width: 375px)
+        @content
+
+@mixin cardTitles($font-size)
+    font-size: $font-size
+    color: $color-blue-dark
+    font-weight: 800
+
+    
+    

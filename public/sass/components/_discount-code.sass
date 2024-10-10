@@ -1,0 +1,21 @@
+.discount-code
+    background: none
+    border: 1px solid $color-grey-discount
+    border-radius: .3rem
+    padding: 1rem 3.5rem 1rem 2rem
+    color: $color-black
+    font-size: 1.6rem
+    transition: all .3s
+    margin-right: 1rem
+    @include mobile
+        width: 18.5rem
+    &:nth-child(n + 2)
+        @include mobile
+            width: 28rem
+    &:focus
+        border-color: $color-black
+        outline: none 
+    &::placeholder
+        color: $color-grey-vs
+        font-size: 1.6rem
+    

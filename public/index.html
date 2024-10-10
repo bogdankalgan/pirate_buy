@@ -1,0 +1,1430 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="icons/siteIcon/Logo.svg" type="image/svg" />
+    <link rel="stylesheet" href="css/bootsrap-revboot.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Pirate Bay</title>
+  </head>
+  <body>
+    <main>
+      <header class="header">
+        <button class="header-burger-button" id="burgerButton">
+          <i class="fa-solid fa-bars" id="burgerButtonIcon"></i>
+        </button>
+
+        <div class="header-burger" id="burger">
+          <div class="header-burger-text">
+            <p class="header-burger-title">Choose game</p>
+          </div>
+
+          <div class="header-burger-items">
+            <a href="#" class="header-burger-item">
+              <img src="icons/burger/1.svg" alt="" />
+
+              Overwatch 2
+            </a>
+
+            <a href="#" class="header-burger-item">
+              <img src="icons/burger/2.svg" alt="" />
+
+              Hearthstone
+            </a>
+
+            <a href="#" class="header-burger-item">
+              <img src="icons/burger/3.svg" alt="" />
+
+              Counter Strike 2
+            </a>
+
+            <a href="#" class="header-burger-item">
+              <img src="icons/burger/4.svg" alt="" />
+
+              Apex legends
+            </a>
+
+            <a href="#" class="header-burger-item">
+              <img src="icons/burger/5.svg" alt="" />
+
+              Pubg
+            </a>
+
+            <a href="#" class="header-burger-item">
+              <img src="icons/burger/6.svg" alt="" />
+
+              Fortnite
+            </a>
+
+            <a href="#" class="header-burger-item">
+              <img src="icons/burger/7.svg" alt="" />
+
+              DOTA 2s
+            </a>
+
+            <a href="#" class="header-burger-item">
+              <img src="icons/burger/8.svg" alt="" />
+
+              FIFA 24
+            </a>
+          </div>
+
+          <div class="header-burger-links">
+            <a href="#" class="header-burger-link">Jobs</a>
+            <a href="#" class="header-burger-link">Support</a>
+            <a href="#" class="header-burger-link">FAQ</a>
+          </div>
+
+          <div class="header-burger-select-container">
+            <select name="" id="burgerSelect" class="header-burger-select">
+              <option value="usd">$ usd</option>
+
+              <option value="rub">₽ rub</option>
+
+              <option value="btc">₿ btc</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="header-left">
+          <div class="header-icon">
+            <a href="#">
+              <picture>
+                <source
+                  srcset="./icons/siteIcon/Logo-mobile.svg"
+                  media="(max-width: 375px)"
+                />
+                <img src="icons/siteIcon/Logo.svg" alt="" />
+              </picture>
+            </a>
+          </div>
+
+          <div class="header-select">
+            <div class="header-devider"></div>
+            <i class="fa-solid fa-bars" style="font-size: 15px"></i>
+            <select name="Choose game" id="" class="header-games">
+              <option value="choose">Choose game</option>
+              <option value="overwatch">Overwatch 2</option>
+              <option value="hearthstone">Hearthstone</option>
+              <option value="cs2">COUNTER STRIKE 2</option>
+              <option value="pubg">Pubg</option>
+              <option value="fortnite">Fortnite</option>
+              <option value="dota">Dota</option>
+              <option value="fifa">FIFA 24</option>
+              <option value="rocket">ROCKET LEAGUE</option>
+            </select>
+            <div class="header-devider"></div>
+          </div>
+
+          <ul class="header-list">
+            <li class="header-list-item">
+              <a href="#">Jobs</a>
+            </li>
+
+            <li class="header-list-item">
+              <a href="#">Support</a>
+            </li>
+
+            <li class="header-list-item">
+              <a href="#">FAQ</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="header-actions">
+          <button class="search-button margin-right-40px" id="searchButton">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+          <input
+            type="text"
+            class="header-actions-input"
+            placeholder="Search"
+            id="searchInput"
+          />
+
+          <button class="search-button margin-right-28px" id="searchButton">
+            <i class="fa-regular fa-user"></i>
+          </button>
+
+          <select id="" class="header-payment">
+            <option value="usd">$ usd</option>
+
+            <option value="rub">₽ rub</option>
+
+            <option value="btc">₿ btc</option>
+          </select>
+
+          <button class="trash-button margin-right-28px">
+            <i class="fa-solid fa-basket-shopping"></i>
+          </button>
+          <div class="header-devider"></div>
+
+          <button class="sign-in">Sign in</button>
+        </div>
+      </header>
+
+      <section class="hero">
+        <div class="hero-text">
+          <h1 class="title-first margin-bottom-53px" id="titleFirst">
+            CHOOSE YOUR <br />
+            <span>GAME BOOST</span>
+          </h1>
+
+          <button class="gold-button">
+            <span>Choose game</span>
+          </button>
+        </div>
+
+        <div class="hero-rating">
+          <div class="hero-rating-icon margin-bottom-14px">
+            <img src="icons/hero/1.svg" alt="" />
+          </div>
+
+          <p class="subtitle margin-bottom-14px">
+            Excellent <span>4.98</span> out of 5
+          </p>
+
+          <div class="hero-rating-stars">
+            <div class="star-icon">
+              <img src="icons/hero/2.svg" alt="" />
+            </div>
+
+            <div class="star-icon">
+              <img src="icons/hero/2.svg" alt="" />
+            </div>
+
+            <div class="star-icon">
+              <img src="icons/hero/2.svg" alt="" />
+            </div>
+
+            <div class="star-icon">
+              <img src="icons/hero/2.svg" alt="" />
+            </div>
+
+            <div class="star-icon">
+              <img src="icons/hero/2.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="choose-game">
+        <h2 class="title-secondary margin-bottom-39px" id="titleSecond">
+          CHOOSE YOUR GAME
+        </h2>
+
+        <div class="choose-game-items">
+          <div class="choose-game-item">
+            <img
+              src="icons/choose-game/1.svg"
+              alt=""
+              style="margin-bottom: 7px"
+            />
+            <p class="choose-game-item-title">Overwatch 2</p>
+          </div>
+
+          <div class="choose-game-item">
+            <img
+              src="icons/choose-game/2.svg"
+              alt=""
+              style="margin-bottom: 7px"
+            />
+            <p class="choose-game-item-title">Hearthstone</p>
+          </div>
+
+          <div class="choose-game-item">
+            <img
+              src="icons/choose-game/3.svg"
+              alt=""
+              style="margin-bottom: 9px"
+            />
+            <p class="choose-game-item-title">COUNTER STRIKE 2</p>
+          </div>
+
+          <div class="choose-game-item">
+            <img
+              src="icons/choose-game/4.svg"
+              alt=""
+              style="margin-bottom: 15px"
+            />
+            <p class="choose-game-item-title">Apex legends</p>
+          </div>
+
+          <div class="choose-game-item">
+            <img
+              src="icons/choose-game/5.svg"
+              alt=""
+              style="margin-bottom: 10px"
+            />
+            <p class="choose-game-item-title">Pubg</p>
+          </div>
+
+          <div class="choose-game-item">
+            <img
+              src="icons/choose-game/6.svg"
+              alt=""
+              style="margin-bottom: 18px"
+            />
+            <p class="choose-game-item-title">Fortnite</p>
+          </div>
+
+          <div class="choose-game-item">
+            <img
+              src="icons/choose-game/7.svg"
+              alt=""
+              style="margin-bottom: 5px"
+            />
+            <p class="choose-game-item-title">Dota 2</p>
+          </div>
+
+          <div class="choose-game-item">
+            <img
+              src="icons/choose-game/8.svg"
+              alt=""
+              style="margin-bottom: 8px"
+            />
+            <p class="choose-game-item-title">FIFA 24</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="hot-offers margin-bottom-94px">
+        <h2 class="title-secondary margin-bottom-40px">HOT OFFERS</h2>
+
+        <div class="tabs margin-bottom-30px">
+          <button class="tabs-item">
+            <p class="tabs-item-text">Overwatch 2</p>
+          </button>
+
+          <button class="tabs-item">
+            <p class="tabs-item-text">Dota 2</p>
+          </button>
+
+          <button class="tabs-item">
+            <p class="tabs-item-text">Hearthstone</p>
+          </button>
+
+          <button class="tabs-item">
+            <p class="tabs-item-text">Apex legends</p>
+          </button>
+
+          <button class="tabs-item">
+            <p class="tabs-item-text">Fortnite</p>
+          </button>
+
+          <button class="tabs-item">
+            <p class="tabs-item-text">COUNTER STRIKE 2</p>
+          </button>
+
+          <button class="tabs-item">
+            <p class="tabs-item-text">Pubg</p>
+          </button>
+        </div>
+
+        <div
+          class="game-cards gap-30px df-jcsb flex-wrap-wrap margin-bottom-30px"
+        >
+          <div class="game-card game-card__hot" id="gameCard">
+            <div class="game-card-img">
+              <img src="img/game-card/1.png" alt="" />
+            </div>
+
+            <div class="game-card-text">
+              <p class="game-card-title">Wotlk Classic Ulduar Raid</p>
+
+              <ul class="game-card-list">
+                <li class="game-card-list-item">Get any desired rank</li>
+
+                <li class="game-card-list-item">Top 500 boost available</li>
+
+                <li class="game-card-list-item">Earn Competitive Points</li>
+              </ul>
+
+              <div class="game-card-price">
+                <div class="game-card-price-block">
+                  <p class="game-card-price-text">From</p>
+
+                  <p class="game-card-price-number">$44.25</p>
+                </div>
+
+                <button class="next-button">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="game-card game-card__hot game-card__sale" id="gameCard">
+            <div class="game-card-img">
+              <img src="img/game-card/2.png" alt="" />
+            </div>
+
+            <div class="game-card-text">
+              <p class="game-card-title">
+                Aberrus, the Shadowed Crucible Mythic
+              </p>
+
+              <ul class="game-card-list">
+                <li class="game-card-list-item">Get any desired rank</li>
+
+                <li class="game-card-list-item">Top 500 boost available</li>
+
+                <li class="game-card-list-item">Earn Competitive Points</li>
+              </ul>
+
+              <div class="game-card-price">
+                <div class="game-card-price-block" id="priceBlock">
+                  <p class="game-card-price-text" id="priceText">From</p>
+
+                  <p class="game-card-price-number" id="priceText2">$44.25</p>
+                </div>
+
+                <button class="next-button">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="game-card game-card__new" id="gameCard">
+            <div class="game-card-img">
+              <img src="img/game-card/3.png" alt="" />
+            </div>
+
+            <div class="game-card-text">
+              <p class="game-card-title">Legends Unlock Boost</p>
+
+              <ul class="game-card-list">
+                <li class="game-card-list-item">Get any desired rank</li>
+
+                <li class="game-card-list-item">Top 500 boost available</li>
+
+                <li class="game-card-list-item">Earn Competitive Points</li>
+              </ul>
+
+              <div class="game-card-price">
+                <div class="game-card-price-block">
+                  <p class="game-card-price-text">From</p>
+
+                  <p class="game-card-price-number">$44.25</p>
+                </div>
+
+                <button class="next-button">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="game-card game-card__new game-card__hot" id="newHotCard">
+            <div class="game-card-img">
+              <img src="img/game-card/4.png" alt="" />
+            </div>
+
+            <div class="game-card-text">
+              <p class="game-card-title">Overwatch Unlock Competitive</p>
+
+              <ul class="game-card-list">
+                <li class="game-card-list-item">Get any desired rank</li>
+
+                <li class="game-card-list-item">Top 500 boost available</li>
+
+                <li class="game-card-list-item">Earn Competitive Points</li>
+              </ul>
+
+              <div class="game-card-price">
+                <div class="game-card-price-block">
+                  <p class="game-card-price-text">From</p>
+
+                  <p class="game-card-price-number">$44.25</p>
+                </div>
+
+                <button class="next-button">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="game-card game-card__hot" id="gameCard">
+            <div class="game-card-img">
+              <img src="img/game-card/1.png" alt="" />
+            </div>
+
+            <div class="game-card-text">
+              <p class="game-card-title">Wotlk Classic Ulduar Raid</p>
+
+              <ul class="game-card-list">
+                <li class="game-card-list-item">Get any desired rank</li>
+
+                <li class="game-card-list-item">Top 500 boost available</li>
+
+                <li class="game-card-list-item">Earn Competitive Points</li>
+              </ul>
+
+              <div class="game-card-price">
+                <div class="game-card-price-block">
+                  <p class="game-card-price-text">From</p>
+
+                  <p class="game-card-price-number">$44.25</p>
+                </div>
+
+                <button class="next-button">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="game-card game-card__hot game-card__sale" id="gameCard">
+            <div class="game-card-img">
+              <img src="img/game-card/2.png" alt="" />
+            </div>
+
+            <div class="game-card-text">
+              <p class="game-card-title">
+                Aberrus, the Shadowed Crucible Mythic
+              </p>
+
+              <ul class="game-card-list">
+                <li class="game-card-list-item">Get any desired rank</li>
+
+                <li class="game-card-list-item">Top 500 boost available</li>
+
+                <li class="game-card-list-item">Earn Competitive Points</li>
+              </ul>
+
+              <div class="game-card-price">
+                <div class="game-card-price-block">
+                  <p class="game-card-price-text">From</p>
+
+                  <p class="game-card-price-number">$44.25</p>
+                </div>
+
+                <button class="next-button">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="game-card game-card__new" id="gameCard">
+            <div class="game-card-img">
+              <img src="img/game-card/3.png" alt="" />
+            </div>
+
+            <div class="game-card-text">
+              <p class="game-card-title">Legends Unlock Boost</p>
+
+              <ul class="game-card-list">
+                <li class="game-card-list-item">Get any desired rank</li>
+
+                <li class="game-card-list-item">Top 500 boost available</li>
+
+                <li class="game-card-list-item">Earn Competitive Points</li>
+              </ul>
+
+              <div class="game-card-price">
+                <div class="game-card-price-block">
+                  <p class="game-card-price-text">From</p>
+
+                  <p class="game-card-price-number">$44.25</p>
+                </div>
+
+                <button class="next-button">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="game-card game-card__new game-card__hot" id="newHotCard">
+            <div class="game-card-img">
+              <img src="img/game-card/4.png" alt="" />
+            </div>
+
+            <div class="game-card-text">
+              <p class="game-card-title">Overwatch Unlock Competitive</p>
+
+              <ul class="game-card-list">
+                <li class="game-card-list-item">Get any desired rank</li>
+
+                <li class="game-card-list-item">Top 500 boost available</li>
+
+                <li class="game-card-list-item">Earn Competitive Points</li>
+              </ul>
+
+              <div class="game-card-price">
+                <div class="game-card-price-block">
+                  <p class="game-card-price-text">From</p>
+
+                  <p class="game-card-price-number">$44.25</p>
+                </div>
+
+                <button class="next-button">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="show-more-container">
+          <button class="show-more">DISCOVER MORE</button>
+        </div>
+      </section>
+
+      <section class="how-works margin-bottom-151px">
+        <h2 class="title-secondary margin-bottom-39px">HOW DOES IT WORK?</h2>
+
+        <div class="how-works-items">
+          <div class="how-works-item">
+            <div class="how-works-item-icon">
+              <img src="icons/how-works-item/1.svg" alt="" />
+            </div>
+            <p class="how-works-item-title">Choose game</p>
+            <p class="how-works-item-subtitle">
+              Choose a required game <br />
+              at our website
+            </p>
+          </div>
+
+          <div class="how-works-item">
+            <div class="how-works-item-icon">
+              <img src="icons/how-works-item/2.svg" alt="" />
+            </div>
+
+            <p class="how-works-item-title">Add information</p>
+
+            <p class="how-works-item-subtitle">
+              Fill in all necessary contact <br />
+              information
+            </p>
+          </div>
+
+          <div class="how-works-item">
+            <div class="how-works-item-icon">
+              <img src="icons/how-works-item/3.svg" alt="" />
+            </div>
+
+            <p class="how-works-item-title">Place an order</p>
+
+            <p class="how-works-item-subtitle">
+              Confirm all information, you <br />
+              have entered
+            </p>
+          </div>
+
+          <div class="how-works-item">
+            <div class="how-works-item-icon">
+              <img src="icons/how-works-item/4.svg" alt="" />
+            </div>
+
+            <p class="how-works-item-title">Expect an answer</p>
+
+            <p class="how-works-item-subtitle">
+              Our specialists will <br />
+              contact you
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="why margin-bottom-63px">
+        <h2 class="title-secondary tac margin-bottom-53px" id="whyTitle">
+          Why Pirate Bay Service for Game Boost Services?
+        </h2>
+
+        <div class="why-items">
+          <div class="why-item">
+            <div class="why-item-icon">
+              <img src="icons/why-items/1.svg" alt="" />
+            </div>
+
+            <p class="why-item-title">24/7 Support</p>
+            <p class="why-item-subtitle">
+              Contact us anytime. We are always glad to help you in game!
+            </p>
+          </div>
+
+          <div class="why-item">
+            <div class="why-item-icon">
+              <img src="icons/why-items/2.svg" alt="" />
+            </div>
+
+            <p class="why-item-title">Express Delivery</p>
+            <p class="why-item-subtitle">
+              Our highly-skilled boosters complete orders as quickly as it
+              possible.
+            </p>
+          </div>
+
+          <div class="why-item">
+            <div class="why-item-icon">
+              <img src="icons/why-items/3.svg" alt="" />
+            </div>
+
+            <p class="why-item-title">Discount Coupons</p>
+            <p class="why-item-subtitle">
+              We have got daily promotions, discounts, giveaways and the unique
+              bonus program!
+            </p>
+          </div>
+
+          <div class="why-item">
+            <div class="why-item-icon">
+              <img src="icons/why-items/4.svg" alt="" />
+            </div>
+
+            <p class="why-item-title">Reasonable Prices</p>
+            <p class="why-item-subtitle">
+              Get an excellent boosting service for affordable price!
+            </p>
+          </div>
+
+          <div class="why-item">
+            <div class="why-item-icon">
+              <img src="icons/why-items/5.svg" alt="" />
+            </div>
+
+            <p class="why-item-title">100% Security Guarantee</p>
+            <p class="why-item-subtitle">
+              Our workers use latest protection services, so you do not have to
+              worry about your account security.
+            </p>
+          </div>
+
+          <div class="why-item">
+            <div class="why-item-icon">
+              <img src="icons/why-items/6.svg" alt="" />
+            </div>
+
+            <p class="why-item-title">Livestream</p>
+            <p class="why-item-subtitle">
+              You can always enjoy watching the process of your boost anytime.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="reviews">
+        <div class="reviews-text">
+          <h2 class="title-secondary" id="reviewsTitle">Reviews</h2>
+
+          <p class="reviews-subtitle">4.89 out of 5 based on 1459 reviews</p>
+
+          <img src="icons/reviews/1.svg" alt="" />
+        </div>
+
+        <div class="reviews-comments">
+          <button class="slider">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+
+          <div class="comment">
+            <div class="comment-icons">
+              <div class="star-icon">
+                <img src="icons/hero/2.svg" alt="" style="margin: 0" />
+              </div>
+
+              <div class="star-icon">
+                <img src="icons/hero/2.svg" alt="" style="margin: 0" />
+              </div>
+
+              <div class="star-icon">
+                <img src="icons/hero/2.svg" alt="" style="margin: 0" />
+              </div>
+
+              <div class="star-icon">
+                <img src="icons/hero/2.svg" alt="" style="margin: 0" />
+              </div>
+
+              <div class="star-icon">
+                <img src="icons/hero/2.svg" alt="" style="margin: 0" />
+              </div>
+            </div>
+
+            <p class="comment-title">Great experience</p>
+
+            <p class="comment-descr">
+              Got me the Life-binder mount. Guy was on pretty much everyday,
+              went through all my characters before reset and worked really
+              hard. thankyou so so much.
+            </p>
+
+            <p class="comment-time">
+              <i class="fa-solid fa-circle-check"></i> <span>Tessa,</span> 12
+              hours ago
+            </p>
+          </div>
+
+          <div class="comment">
+            <div class="comment-icons">
+              <div class="star-icon">
+                <img src="icons/hero/2.svg" alt="" style="margin: 0" />
+              </div>
+
+              <div class="star-icon">
+                <img src="icons/hero/2.svg" alt="" style="margin: 0" />
+              </div>
+
+              <div class="star-icon">
+                <img src="icons/hero/2.svg" alt="" style="margin: 0" />
+              </div>
+
+              <div class="star-icon">
+                <img src="icons/hero/2.svg" alt="" style="margin: 0" />
+              </div>
+
+              <div class="star-icon">
+                <img src="icons/hero/2.svg" alt="" style="margin: 0" />
+              </div>
+            </div>
+
+            <p class="comment-title">Great experience</p>
+
+            <p class="comment-descr">
+              Got me the Life-binder mount. Guy was on pretty much everyday,
+              went through all my characters before reset and worked really
+              hard. thankyou so so much.
+            </p>
+
+            <p class="comment-time">
+              <i class="fa-solid fa-circle-check"></i> <span>Tessa,</span> 12
+              hours ago
+            </p>
+          </div>
+
+          <div class="comment">
+            <div class="comment-icons">
+              <div class="star-icon">
+                <img src="icons/hero/2.svg" alt="" style="margin: 0" />
+              </div>
+
+              <div class="star-icon">
+                <img src="icons/hero/2.svg" alt="" style="margin: 0" />
+              </div>
+
+              <div class="star-icon">
+                <img src="icons/hero/2.svg" alt="" style="margin: 0" />
+              </div>
+
+              <div class="star-icon">
+                <img src="icons/hero/2.svg" alt="" style="margin: 0" />
+              </div>
+
+              <div class="star-icon">
+                <img src="icons/hero/2.svg" alt="" style="margin: 0" />
+              </div>
+            </div>
+
+            <p class="comment-title">Great experience</p>
+
+            <p class="comment-descr">
+              Got me the Life-binder mount. Guy was on pretty much everyday,
+              went through all my characters before reset and worked really
+              hard. thankyou so so much.
+            </p>
+
+            <p class="comment-time">
+              <i class="fa-solid fa-circle-check"></i> <span>Tessa,</span> 12
+              hours ago
+            </p>
+          </div>
+
+          <div class="comment">
+            <div class="comment-icons">
+              <div class="star-icon">
+                <img src="icons/hero/2.svg" alt="" style="margin: 0" />
+              </div>
+
+              <div class="star-icon">
+                <img src="icons/hero/2.svg" alt="" style="margin: 0" />
+              </div>
+
+              <div class="star-icon">
+                <img src="icons/hero/2.svg" alt="" style="margin: 0" />
+              </div>
+
+              <div class="star-icon">
+                <img src="icons/hero/2.svg" alt="" style="margin: 0" />
+              </div>
+
+              <div class="star-icon">
+                <img src="icons/hero/2.svg" alt="" style="margin: 0" />
+              </div>
+            </div>
+
+            <p class="comment-title">Great experience</p>
+
+            <p class="comment-descr">
+              Best Service in the World. 100 % serious, 100 % perfect. Everytime
+              again
+            </p>
+
+            <p class="comment-time">
+              <i class="fa-solid fa-circle-check"></i> <span>Tyrstyr,</span> 1
+              month ago
+            </p>
+          </div>
+          <button class="slider">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+      </section>
+
+      <section class="faq margin-bottom-100px" id="faqContainer">
+        <h2 class="title-secondary margin-bottom-34px" id="faq">FAQ</h2>
+
+        <div class="faq-content">
+          <div class="faq-support">
+            <p class="faq-support-title">24/7 support</p>
+
+            <p class="faq-support-descr">
+              If you have any kind of legal way you may think it would be useful
+              for us to advertise on, don't hesitate contacting us and offering
+              what you have got!
+            </p>
+
+            <button class="blue-button">
+              <i class="fa-brands fa-rocketchat"></i> OPEN CHAT
+            </button>
+          </div>
+
+          <div class="faq-questions">
+            <div class="faq-question faq-question__active" id="ques">
+              <div class="faq-question-qs">
+                I just bought the service. ​ What's next?
+                <i class="fa-solid fa-chevron-up"></i>
+              </div>
+
+              <p class="faq-question-answ">
+                Our operator will contact you using the communication method
+                specified in order form
+              </p>
+            </div>
+
+            <div class="faq-question">
+              <div class="faq-question-qs">
+                How can i place an order?
+                <i class="fa-solid fa-chevron-up"></i>
+              </div>
+
+              <p class="faq-question-answ">
+                Our operator will contact you using the communication method
+                specified in order form
+              </p>
+            </div>
+
+            <div class="faq-question">
+              <div class="faq-question-qs">
+                What payment methods are available in the store?
+                <i class="fa-solid fa-chevron-up"></i>
+              </div>
+
+              <p class="faq-question-answ">
+                Our operator will contact you using the communication method
+                specified in order form
+              </p>
+            </div>
+
+            <div class="faq-question">
+              <div class="faq-question-qs">
+                Could the ETA of this Service be differ from specified one?
+                <i class="fa-solid fa-chevron-up"></i>
+              </div>
+
+              <p class="faq-question-answ">
+                Our operator will contact you using the communication method
+                specified in order form
+              </p>
+            </div>
+
+            <div class="faq-question">
+              <div class="faq-question-qs">
+                What is account sharing? Is it safity ?
+                <i class="fa-solid fa-chevron-up"></i>
+              </div>
+
+              <p class="faq-question-answ">
+                Our operator will contact you using the communication method
+                specified in order form
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="blog margin-bottom-90px">
+        <div class="blog-text margin-bottom-34px">
+          <h2 class="title-secondary">OUR BLOG</h2>
+        </div>
+
+        <div class="blog-cards">
+          <button class="slider">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+
+          <div
+            class="blog-card"
+            style="
+              background: url(./img/blog-card/1.png) center center no-repeat;
+            "
+          >
+            <p class="blog-card-title">WotLK Classic Leveling Guide</p>
+
+            <p class="blog-card-descr">
+              We can help you reach the WotLK max level quickly
+            </p>
+
+            <button class="read-more">READ MORE</button>
+          </div>
+
+          <div
+            class="blog-card"
+            style="
+              background: url(./img/blog-card/2.png) center center no-repeat;
+            "
+          >
+            <p class="blog-card-title">
+              Best and worst classes for M+ and Raids in 10.1 Patch
+            </p>
+
+            <p class="blog-card-descr">
+              Tier Lists of Best and Worst Classes and Specializations to Play
+              inMythic+ Dungeons and Raids in 10.1
+            </p>
+
+            <button class="read-more">READ MORE</button>
+          </div>
+
+          <div
+            class="blog-card"
+            style="
+              background: url(./img/blog-card/3.png) center center no-repeat;
+            "
+          >
+            <p class="blog-card-title">WotLK Classic Leveling Guide</p>
+
+            <p class="blog-card-descr">
+              We can help you reach the WotLK max level quickly
+            </p>
+
+            <button class="read-more">READ MORE</button>
+          </div>
+
+          <div
+            class="blog-card"
+            style="
+              background: url(./img/blog-card/4.png) center center no-repeat;
+            "
+          >
+            <p class="blog-card-title">
+              Best and worst classes for M+ and Raids in 10.1 Patche
+            </p>
+
+            <p class="blog-card-descr">
+              Tier Lists of Best and Worst Classes and Specializations to Play
+              inMythic+ Dungeons and Raids in 10.1
+            </p>
+
+            <button class="read-more">READ MORE</button>
+          </div>
+
+          <button class="slider">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+
+        <div class="show-more-container">
+          <button class="show-more" id="moreBlog">MORE BLOGS</button>
+        </div>
+      </section>
+
+      <section class="modal margin-bottom-147px">
+        <div class="modal-container">
+          <h2 class="title-secondary modal-title">
+            Are you a professional <br />
+            gamer willing to work <br />
+            with <span>PIRAte bay</span> ?
+          </h2>
+
+          <p class="modal-descr">
+            Join our team of over 1 000 of professional gamers <br />
+            and suppliers who get paid helping other gamers <br />
+            worldwide.
+          </p>
+
+          <button class="gold-button"><span>Start earning</span></button>
+        </div>
+      </section>
+
+      <section class="payment margin-bottom-130px">
+        <h2 class="title-secondary margin-bottom-34px" id="paymentTitle">
+          Official payment METHODS
+        </h2>
+
+        <div class="payment-items">
+          <div class="payment-item">
+            <img src="icons/payment/1.svg" alt="" />
+          </div>
+
+          <div class="payment-item">
+            <img src="icons/payment/2.svg" alt="" />
+          </div>
+
+          <div class="payment-item">
+            <img src="icons/payment/3.svg" alt="" />
+          </div>
+
+          <div class="payment-item">
+            <img src="icons/payment/4.svg" alt="" />
+          </div>
+
+          <div class="payment-item">
+            <img src="icons/payment/5.svg" alt="" />
+          </div>
+
+          <div class="payment-item">
+            <img src="icons/payment/6.svg" alt="" />
+          </div>
+
+          <div class="payment-item">
+            <img src="icons/payment/7.svg" alt="" />
+          </div>
+
+          <div class="payment-item">
+            <img src="icons/payment/8.svg" alt="" />
+          </div>
+
+          <div class="payment-item">
+            <img src="icons/payment/9.svg" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section class="reason margin-bottom-63px">
+        <h2 class="title-secondary margin-bottom-18px">
+          Reasons to Buy Apex Legends Boost
+        </h2>
+
+        <p class="descr">
+          There are a lot of skins for Legends, weapons, statistics frames in
+          Apex Legends that make each player unique and show his enthusiasm for
+          the game. But getting it, while having good statistics is quite
+          difficult and time-consuming. What to do in such a situation, when
+          there is not enough time for all this, or things trivially don't work
+          out? if you are stunned with this or that problem, then Pirate Bay
+          Service is here to provide any Apex Legends Boosting Service to help
+          you!
+        </p>
+      </section>
+
+      <section class="about margin-bottom-130px">
+        <h2 class="title-secondary margin-bottom-18px">
+          A bit about Apex Legends itself
+        </h2>
+
+        <p class="descr">
+          In the wake of hype raised by PUBG and Fortnite, everyone strives to
+          break into a new Battle Royale genre - from major publishers to
+          unknown studios. One of those who decided to try to create a worthy
+          competitor to these games was EA with Respawn Entertainment and their
+          game - Apex Legends. The game is available on PC, PlayStation Xbox,
+          iOS, Android, Nintendo Switch. There are two basic rules in any royal
+          battle: a narrowing and damaging circle does not allow you to sit in
+          one place and inexorably push players against each other and at the
+          end of the round there should be only one player (or one team). Apex
+          Legends does not encroach on these unshakable foundations of the
+          genre, but rather boldly experimenting with others. The most
+          noticeable difference from other games is the presence of various
+          heroes or as they are called Legends. Each Legend has a unique
+          appearance, skills and abilities. Developers managed to create truly
+          unique characters - both externally and in terms of gameplay. They
+          resemble the Overwatch characters, except for restrictions on the use
+          of weapons and equipment - everyone is equal here.
+        </p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="footer-list-container">
+          <ul class="footer-list">
+            <li class="footer-list-item footer-list-item__head">
+              <a href="#">Pirate bay service</a>
+            </li>
+
+            <li class="footer-list-item">
+              <a href="#">Home </a>
+            </li>
+
+            <li class="footer-list-item">
+              <a href="#">Blogs</a>
+            </li>
+
+            <li class="footer-list-item">
+              <a href="#">FAQ</a>
+            </li>
+
+            <li class="footer-list-item">
+              <a href="#">Jobs</a>
+            </li>
+
+            <li class="footer-list-item">
+              <a href="#">Contacts</a>
+            </li>
+
+            <li class="footer-list-item">
+              <a href="#">Request a service</a>
+            </li>
+          </ul>
+
+          <ul class="footer-list">
+            <li class="footer-list-item footer-list-item__head">
+              <a href="#">LEGAL</a>
+            </li>
+
+            <li class="footer-list-item">
+              <a href="#">Terms and conditions </a>
+            </li>
+
+            <li class="footer-list-item">
+              <a href="#">Privacy policy </a>
+            </li>
+
+            <li class="footer-list-item">
+              <a href="#">Refund policy </a>
+            </li>
+
+            <li class="footer-list-item">
+              <a href="#">Cookies policy </a>
+            </li>
+          </ul>
+        </div>
+
+        <ul class="footer-list mobile-margin-bottom-44px">
+          <li class="footer-list-item footer-list-item__head">
+            <a href="#">Contact US</a>
+          </li>
+
+          <li class="footer-list-item">
+            <a href="#">131 rue Pierre Brunies, 46000 CAHORS, France.</a>
+          </li>
+
+          <li class="footer-list-item">
+            <a href="#">support@piratebay-service.com</a>
+          </li>
+
+          <li class="footer-list-item">
+            <a href="#">Reg.No. W461006961</a>
+          </li>
+        </ul>
+
+        <div class="footer-social">
+          <p class="footer-social-title">SOCIAL NETWORKS</p>
+
+          <div class="footer-social-items">
+            <div class="social-item">
+              <a href="#" class="social-icon"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+            </div>
+
+            <div class="social-item">
+              <a href="#" class="social-icon"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+            </div>
+
+            <div class="social-item">
+              <a href="#" class="social-icon"
+                ><i class="fa-brands fa-square-instagram"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <ul
+          class="footer-list footer-list-order mobile-margin-bottom-50px mobile-display-flex"
+        >
+          <li class="footer-list-item__head footer-list-item">
+            <a href="#">GAMES</a>
+          </li>
+
+          <div class="footer-list-items">
+            <div class="footer-list-item-container">
+              <li class="footer-list-item">
+                <a href="#">Overwatch 2</a>
+              </li>
+
+              <li class="footer-list-item">
+                <a href="#">Hearthstone</a>
+              </li>
+
+              <li class="footer-list-item">
+                <a href="#">Apex</a>
+              </li>
+
+              <li class="footer-list-item">
+                <a href="#">legends</a>
+              </li>
+            </div>
+
+            <div class="footer-list-item-container">
+              <li class="footer-list-item">
+                <a href="#">Counter Strike 2</a>
+              </li>
+
+              <li class="footer-list-item">
+                <a href="#">Pubg</a>
+              </li>
+
+              <li class="footer-list-item">
+                <a href="#">legendFortnites</a>
+              </li>
+            </div>
+
+            <div class="footer-list-item-container">
+              <li class="footer-list-item">
+                <a href="#">Dota 2</a>
+              </li>
+
+              <li class="footer-list-item">
+                <a href="#">FIFA 22</a>
+              </li>
+            </div>
+          </div>
+        </ul>
+      </div>
+
+      <div class="footer-mid">
+        <ul
+          class="footer-list footer-list-order mobile-margin-bottom-50px mobile-display-none"
+        >
+          <li class="footer-list-item__head footer-list-item">
+            <a href="#">GAMES</a>
+          </li>
+
+          <div class="footer-list-items">
+            <div class="footer-list-item-container">
+              <li class="footer-list-item">
+                <a href="#">Overwatch 2</a>
+              </li>
+
+              <li class="footer-list-item">
+                <a href="#">Hearthstone</a>
+              </li>
+
+              <li class="footer-list-item">
+                <a href="#">Apex</a>
+              </li>
+
+              <li class="footer-list-item">
+                <a href="#">legends</a>
+              </li>
+            </div>
+
+            <div class="footer-list-item-container">
+              <li class="footer-list-item">
+                <a href="#">Counter Strike 2</a>
+              </li>
+
+              <li class="footer-list-item">
+                <a href="#">Pubg</a>
+              </li>
+
+              <li class="footer-list-item">
+                <a href="#">legendFortnites</a>
+              </li>
+            </div>
+
+            <div class="footer-list-item-container">
+              <li class="footer-list-item">
+                <a href="#">Dota 2</a>
+              </li>
+
+              <li class="footer-list-item">
+                <a href="#">FIFA 22</a>
+              </li>
+            </div>
+          </div>
+        </ul>
+
+        <div class="footer-payment">
+          <div class="footer-list-item footer-list-item__head">
+            <a href="#">Payment methods</a>
+          </div>
+
+          <div class="footer-payment-icons">
+            <img src="icons/footer/1.svg" alt="" />
+            <img src="icons/footer/2.svg" alt="" />
+            <img src="icons/footer/3.svg" alt="" />
+            <img src="icons/footer/4.svg" alt="" />
+            <img src="icons/footer/5.svg" alt="" />
+            <img src="icons/footer/6.svg" alt="" />
+            <img src="icons/footer/7.svg" alt="" />
+            <img src="icons/footer/8.svg" alt="" />
+          </div>
+
+          <div class="footer-rev">
+            <img src="icons/hero/1.svg" alt="" />
+            <p class="footer-rev-text">4.89 out of 5 based on 1459 reviews</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-bottom-text">
+          © Pirate Bay Services 2023. All right s reserved. 131 rue Pierre
+          Brunies, 46000 CAHORS, France. Reg.No. W461006961 All copyrights,
+          trade marks and service marks belong to their corresponding owners.
+          All mentioned brand names and related materials, logos and images are
+          registered property of the respective companies. Pirate Bay Services
+          is not associated with or endorsed by any copyright owner in any way
+          and offers services to players in different online games to make their
+          gaming experience better.
+        </p>
+
+        <form action="" class="footer-form">
+          <p class="footer-form-title">SUBSCRIBE TO NEWS</p>
+
+          <div class="footer-form-container">
+            <div class="footer-form-input">
+              <input
+                type="email"
+                name=""
+                id="footerInput"
+                placeholder="Sign up  to be in touch"
+              />
+              <label for="footerInput" id="footerLabel">
+                <img src="icons/footer/letter.svg" alt="" />
+              </label>
+            </div>
+
+            <button class="subscribe">SUBSCRIBE</button>
+          </div>
+        </form>
+      </div>
+    </footer>
+
+    <script src="./headerInput.js"></script>
+    <script src="./mobileMargins.js"></script>
+    <script src="./createCard.js"></script>
+    <script src="./gameCardItems.js"></script>
+    <script src="./question.js"></script>
+    <script src="./footerInput.js"></script>
+    <script src="./burger.js"></script>
+  </body>
+</html>

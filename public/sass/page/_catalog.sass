@@ -1,0 +1,68 @@
+.catalog-aside
+    & > .header-burger-item::after
+        width: 167%
+
+.catalog-content
+    padding: 3.8rem 6.5rem 0 6.5rem
+    @include mobile
+        padding: 1.9rem 1.5rem 0 1.5rem
+    background: url(../img/card-info/1.png) top center no-repeat
+    width: 100%
+    background-position-y: -8rem
+    & > section
+        padding: 0
+    & > .why
+        padding: 0
+        padding-right: 11rem
+    & .why-items
+        justify-content: start
+.catalog-hero
+    padding: 0
+    width: 100%
+    padding-right: 14.2rem
+    margin-bottom: 3.8rem
+    &-text
+        & .title-secondary
+            font-size: 4.8rem
+            @include mobile
+                font-size: 3.6rem
+    &-block
+        display: flex
+        align-items: center
+        justify-content: space-between
+        & > .hero-rating > .subtitle
+            color: $color-black
+        @include mobile
+            display: block
+    &-descr
+        color: $color-blue-dark
+        font-size: 1.6rem
+        font-weight: 500
+        width: 88rem
+        @include mobile
+            width: 100%
+
+
+.catalog-cards
+    margin-bottom: 14rem
+    &-container
+        display: flex
+        align-items: center
+        gap: 3rem 1.2rem
+        flex-wrap: wrap
+
+.catalog-uls
+    &:not(:last-child)
+        margin-bottom: 2.4rem
+    & > .title-secondary
+        margin-bottom: 2rem
+    & > .card-info-content-descr-text
+        margin-bottom: 2.3rem
+    & .card-info-list-item
+        width: 84rem
+        @include mobile
+            width: 100%
+    &-ul
+        padding-left: 2rem
+
+            

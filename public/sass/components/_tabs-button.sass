@@ -1,0 +1,31 @@
+.tabs-buttons
+    margin-bottom: 2.8rem
+    display: flex
+    flex-wrap: nowrap
+    align-items: center
+    @include mobile
+        overflow-x: auto
+        &::-webkit-scrollbar
+            display: none
+    &-item
+        background: rgba(255, 255, 255, .25)
+        border: 1px solid rgba(0, 0, 0, .3)
+        border-radius: .5rem
+        padding: 1.3rem 1.5rem
+        font-size: 1.8rem
+        font-weight: 700
+        color: $color-blue-dark
+        transition: all .3s
+        white-space: nowrap
+        &:focus
+            outline: none
+        &:hover
+            color: $color-orange
+        &:active
+            color: $color-blue-dark
+        &__active
+            background: $color-blue-dark
+            color: $color-white
+            border: none
+        &:not(:last-child)
+            margin-right: 2rem

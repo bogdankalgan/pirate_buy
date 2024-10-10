@@ -1,0 +1,36 @@
+.faq-question 
+    background: $color-white-light
+    border: 1px solid $color-white-border
+    padding: 2.1rem 3rem 3.3rem 3rem
+    border-radius: .7rem
+    width: 114rem
+    height: 7rem
+    transition: all .3s
+    @include mobile
+        width: 34.5rem
+        height: auto
+        padding: 2.2rem 1.8rem 2.1rem 3rem
+    i
+        transform: rotate(180deg)
+    &__active
+        height: 12rem
+        @include mobile
+            padding: 2rem 2rem 2.5rem 3rem
+            height: 18.5rem
+        i
+            transform: rotate(0)
+    &__active &-answ
+        display: inline-block
+    &-qs
+        display: flex
+        justify-content: space-between
+        font-size: 1.8rem
+        font-weight: 600
+        color: $color-blue-dark
+        margin-bottom: 1.3rem
+    &-answ
+        display: none
+        color: $color-blue-dark
+        font-size: 1.6rem 
+        line-height: 2.6rem
+        
