@@ -3762,4 +3762,24 @@ section {
   }
 }
 
+.change-password {
+  padding: 3.8rem 19.5rem 16.5rem 19.5rem;
+  background: #F8FBFF;
+  width: 100%;
+}
+@media (max-width: 375px) {
+  .change-password {
+    padding: 1.9rem 1.5rem 0 1.5rem;
+  }
+}
+.change-password .bread-crumbs {
+  padding: 0;
+}
+.change-password-content {
+  padding: 0;
+}
+.change-password .title-secondary {
+  margin-bottom: 2.6rem;
+}
+
 /*# sourceMappingURL=style.css.map */
