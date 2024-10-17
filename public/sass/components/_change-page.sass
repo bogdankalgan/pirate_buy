@@ -1,0 +1,36 @@
+.change-page
+    &-button
+        background: none
+        border: none
+        color: $color-grey-vs
+        font-size: 1.6rem
+        &__active
+            color: $color-blue-dark
+            font-weight: 500
+            background: $color-grey-buttonBcg
+            border-radius: 50%
+            padding: 1rem 2rem
+        &:not(:last-child)
+            margin-right: 2rem
+        &:last-child
+            font-weight: 500
+            color: $color-blue-dark
+        &:focus
+            outline: none
+        &:hover
+            color: $color-orange
+        &:active
+            color: $color-blue-dark
+        &-next
+            background: none
+            border: none
+            color: $color-blue-dark
+            font-size: 1.6rem
+            font-weight: 500
+            transition: all .3s
+            &:focus
+                outline: none
+            &:hover
+                color: $color-orange
+            &:active
+                color: $color-blue-dark

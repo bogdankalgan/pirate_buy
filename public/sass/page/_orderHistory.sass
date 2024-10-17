@@ -1,0 +1,26 @@
+.order-history
+    padding: 3.8rem 19.5rem 0 19.5rem
+    background: $color-white-border
+    @include mobile
+        padding: 1.9rem 1.5rem 0 1.5rem
+        display: flex
+        flex-direction: column
+        height: auto
+        & .profile-window
+            height: auto
+            padding: 0 1.5rem 3.8rem 1.5rem
+            &-mid
+                margin-bottom: 3rem
+                padding-bottom: 0
+    & > .bread-crumbs
+        padding: 0
+    & .title-secondary
+        margin-bottom: 2.6rem
+    & .profile-window-mid::after
+        display: none
+
+.order-items
+    padding-right: 4rem
+    margin-bottom: 5.1rem
+    @include mobile
+        padding-right: 0
