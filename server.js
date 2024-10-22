@@ -4,22 +4,15 @@ const readline = require("readline");
 
 const expectedPassword = "kbbk946";
 
-// Создаём интерфейс для ввода данных с изменением отображения на экране
-const rl = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout,
-  terminal: true,
-});
-
 // Функция для скрытого ввода пароля
 function askPassword(query) {
   return new Promise((resolve) => {
     const stdin = process.stdin;
     const stdout = process.stdout;
 
-    stdout.write(query);
+    stdout.write(query); // Печатаем запрос пароля
 
-    stdin.setRawMode(true); // Включаем "сырое" чтение ввода
+    stdin.setRawMode(true); // Включаем сырое чтение ввода
     stdin.resume();
     stdin.setEncoding("utf8");
 
@@ -31,19 +24,18 @@ function askPassword(query) {
         case "\n":
         case "\r":
         case "\u0004": // Когда нажимается Enter
-          stdin.setRawMode(false); // Возвращаем в обычный режим
-          stdout.write("\n");
+          stdin.setRawMode(false); // Выключаем режим
+          stdout.write("\n"); // Переход на новую строку
           stdin.pause();
-          resolve(password); // Возвращаем введённый пароль
+          resolve(password); // Возвращаем пароль
           break;
         case "\u0003": // Ctrl+C для выхода
           process.exit();
           break;
         default:
-          // Стираем последний символ с помощью escape-последовательности
-          stdout.write("\x1B[2K\x1B[200D"); // Стираем текущую строку
-          stdout.write(query + "●".repeat(password.length + 1)); // Показываем круги
-          password += char; // Добавляем символ в пароль
+          // Отключаем вывод символов на экран
+          // Ничего не выводим и просто записываем символ в строку пароля
+          password += char;
           break;
       }
     });
@@ -83,6 +75,6 @@ function askPassword(query) {
     }
   } else {
     console.log("Incorrect password. Exiting...");
-    rl.close();
+    process.exit(); // Завершаем процесс при неверном пароле
   }
 })();

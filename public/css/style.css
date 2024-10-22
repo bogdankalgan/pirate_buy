@@ -26,6 +26,7 @@ section {
   font-weight: 600;
   line-height: 82px;
   letter-spacing: 0;
+  text-transform: uppercase;
 }
 @media (max-width: 375px) {
   .title-first {
@@ -3780,6 +3781,180 @@ section {
 }
 .change-password .title-secondary {
   margin-bottom: 2.6rem;
+}
+
+.jobs-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 3.7rem;
+  margin-bottom: 10rem;
+}
+@media (max-width: 375px) {
+  .jobs-header-icon {
+    content: url(../icons/siteIcon/jobs-header-mobile.svg);
+  }
+}
+@media (max-width: 375px) {
+  .jobs-sign-in {
+    display: block;
+    font-size: 1.2rem;
+  }
+}
+.jobs-hero {
+  background: url(../img/jobs-hero/jobs-hero-bcg.png), #0B2239;
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-position-y: 0rem;
+  padding-bottom: 7.8rem;
+}
+@media (max-width: 375px) {
+  .jobs-hero {
+    background: url(../img/jobs-hero/jobs-hero-bcg-mobile.png), #0B2239;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-position-y: 23rem;
+  }
+}
+.jobs-hero-title {
+  margin-bottom: 2rem;
+}
+@media (max-width: 375px) {
+  .jobs-hero-title {
+    margin-bottom: 20.7rem;
+  }
+}
+.jobs-hero-descr {
+  font-size: 1.8rem;
+  color: #85919C;
+  width: 65.9rem;
+  line-height: 30px;
+  margin-bottom: 8.3rem;
+}
+@media (max-width: 375px) {
+  .jobs-hero-descr {
+    width: 100%;
+    margin-bottom: 3.4rem;
+  }
+}
+.jobs-hero-why-title {
+  text-align: center;
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 4.9rem;
+}
+.jobs-hero-why-items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 375px) {
+  .jobs-hero-why-items {
+    display: block;
+  }
+}
+.jobs-hero-why-item {
+  display: flex;
+  align-items: start;
+  color: #fff;
+  width: 36rem;
+}
+@media (max-width: 375px) {
+  .jobs-hero-why-item:not(:last-child) {
+    margin-bottom: 2.5rem;
+  }
+}
+.jobs-hero-why-item-icon {
+  margin-right: 1rem;
+}
+.jobs-hero-why-item-title {
+  font-weight: 800;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+.jobs-hero-why-item-descr {
+  color: #85919C;
+  font-size: 1.4rem;
+}
+.jobs-choose {
+  padding-top: 8rem;
+  padding-bottom: 15rem;
+  background: #F8FBFF;
+}
+@media (max-width: 375px) {
+  .jobs-choose {
+    padding-bottom: 10rem;
+  }
+}
+.jobs-choose > .title-secondary {
+  margin-bottom: 2.9rem;
+}
+.jobs-choose-item {
+  display: flex;
+  align-items: start;
+}
+@media (max-width: 375px) {
+  .jobs-choose-item {
+    display: block;
+  }
+  .jobs-choose-item > .gold-button {
+    text-align: center;
+  }
+  .jobs-choose-item:not(:last-child) {
+    margin-bottom: 10rem;
+  }
+}
+.jobs-choose-item:nth-child(3) {
+  flex-direction: row-reverse;
+  align-items: center;
+}
+.jobs-choose-item-img {
+  margin-right: 3rem;
+}
+@media (max-width: 375px) {
+  .jobs-choose-item-img {
+    width: 100%;
+    height: 36.7rem;
+    margin-right: 0;
+  }
+}
+.jobs-choose-item-title {
+  color: #0B2239;
+  font-size: 3.6rem;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+  text-transform: uppercase;
+}
+.jobs-choose-item-descr {
+  font-size: 1.8rem;
+  margin-bottom: 1.8rem;
+}
+.jobs-choose-item-ads-title {
+  color: #0B2239;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.jobs-choose-item-ul {
+  padding-left: 3rem;
+  margin-bottom: 3.4rem;
+}
+.jobs-choose-item-ul-item {
+  color: #0B2239;
+  font-size: 1.8rem;
+}
+.jobs-choose-item-ul-item:not(:last-child) {
+  margin-bottom: 0.9rem;
+}
+.jobs-faq {
+  background: #F8FBFF;
+}
+.jobs-faq .faq-questions {
+  width: 100%;
+}
+.jobs-faq .faq-question {
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

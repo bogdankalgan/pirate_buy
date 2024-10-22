@@ -1,0 +1,123 @@
+.jobs
+    &-header
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding-top: 3.7rem
+        margin-bottom: 10rem
+        &-icon
+            @include mobile
+                content: url(../icons/siteIcon/jobs-header-mobile.svg)
+    &-sign-in
+        @include mobile
+            display: block
+            font-size: 1.2rem
+    &-hero
+        background: url(../img/jobs-hero/jobs-hero-bcg.png), $color-blue-dark
+        background-repeat: no-repeat
+        background-position: center right
+        background-position-y: 0rem
+        padding-bottom: 7.8rem
+        @include mobile
+            background: url(../img/jobs-hero/jobs-hero-bcg-mobile.png), $color-blue-dark
+            background-repeat: no-repeat
+            background-position: top center
+            background-position-y: 23rem
+        &-title
+            margin-bottom: 2rem
+            @include mobile
+                margin-bottom: 20.7rem
+        &-descr
+            font-size: 1.8rem
+            color: $color-grey-vs
+            width: 65.9rem
+            line-height: 30px
+            margin-bottom: 8.3rem
+            @include mobile
+                width: 100%
+                margin-bottom: 3.4rem
+        &-why
+            &-title
+                text-align: center
+                color: $color-white
+                font-size: 3rem
+                font-weight: 700
+                margin-bottom: 4.9rem
+            &-items
+                display: flex
+                align-items: center
+                justify-content: space-between
+                @include mobile
+                    display: block
+            &-item
+                display: flex
+                align-items: start
+                color: $color-white
+                width: 36rem
+                @include mobile
+                    &:not(:last-child)
+                        margin-bottom: 2.5rem
+                &-icon
+                    margin-right: 1rem
+                &-title
+                    font-weight: 800
+                    font-size: 1.8rem
+                    margin-bottom: 1.5rem
+                &-descr
+                    color: $color-grey-vs
+                    font-size: 1.4rem
+    &-choose
+        padding-top: 8rem
+        padding-bottom: 15rem
+        background: $color-white-light
+        @include mobile
+            padding-bottom: 10rem
+        & > .title-secondary
+            margin-bottom: 2.9rem
+        &-item
+            display: flex
+            align-items: start
+            @include mobile
+                display: block
+                & > .gold-button
+                    text-align: center
+                &:not(:last-child)
+                    margin-bottom: 10rem
+            &:nth-child(3)
+                flex-direction: row-reverse
+                align-items: center
+            &-img
+                margin-right: 3rem
+                @include mobile
+                    width: 100%
+                    height: 36.7rem
+                    margin-right: 0
+            &-title
+                color: $color-blue-dark
+                font-size: 3.6rem
+                font-weight: 700
+                margin-bottom: 2.5rem
+                text-transform: uppercase
+            &-descr
+                font-size: 1.8rem
+                margin-bottom: 1.8rem
+            &-ads
+                &-title
+                    color: $color-blue-dark
+                    font-size: 1.8rem
+                    font-weight: 700
+                    margin-bottom: 1rem
+            &-ul
+                padding-left: 3rem
+                margin-bottom: 3.4rem
+                &-item
+                    color: $color-blue-dark
+                    font-size: 1.8rem
+                    &:not(:last-child)
+                        margin-bottom: .9rem
+    &-faq
+        background: $color-white-light
+        & .faq-questions
+            width: 100%
+        & .faq-question
+            width: 100%
