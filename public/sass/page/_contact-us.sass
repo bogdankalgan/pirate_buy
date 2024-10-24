@@ -1,0 +1,71 @@
+.contact-us
+    padding: 3.8rem 45.5rem 20.4rem 19.3rem
+    background: url(../img/hero/1.png), $color-blue-dark
+    background-position: right bottom
+    background-repeat: no-repeat
+    background-size: 213.6rem 83rem
+    background-position-x: 0
+    width: 100%
+    @include mobile
+        padding: 2.1rem 0 25.4rem 1.3rem
+        background: url(../img/hero/hero-bcg-mobile.png), $color-blue-dark
+        background-repeat: no-repeat
+        background-position: center bottom
+    & > .bread-crumbs
+        padding: 0
+        color: $color-white
+        margin-bottom: 2.5rem
+        button
+            color: $color-white
+        a
+            color: $color-white
+    & > .title-secondary
+        font-size: 3.6rem
+        color: $color-white
+        margin-bottom: 2.6rem
+        @include mobile
+            margin-bottom: 4rem
+    & .blue-button::before
+        width: 8rem
+        height: 8rem
+    & .blue-button
+        overflow: hidden
+        @include mobile
+            margin-bottom: 2.1rem
+    & .descr
+        color: $color-white
+        &:nth-child(1)
+            font-weight: 700
+            font-size: 1.8rem
+            margin-bottom: 1.2rem
+        &:nth-child(2)
+            color: $color-grey-vs
+            margin-bottom: 1.7rem
+            width: 49rem
+            @include mobile
+                width: auto
+        &:nth-child(3)
+            font-size: 1.8rem
+            font-weight: 700
+    &-block
+        display: flex
+        justify-content: space-between
+        @include mobile
+            flex-direction: column
+        &-left
+            &-top
+                margin-bottom: 4rem
+                @include mobile
+                    margin-bottom: 2.1rem
+            &-mid
+                margin-bottom: 2.7rem
+                @include mobile
+                    margin-bottom: 3.8rem
+            &-bottom
+                @include mobile
+                    margin-bottom: 3.2rem
+        &-right
+            &-top
+                margin-bottom: 7rem
+                @include mobile
+                    margin-bottom: 6.4rem
