@@ -4089,4 +4089,50 @@ section {
   }
 }
 
+.refund-policy {
+  padding: 3.8rem 0 9.2rem 19.5rem;
+  width: 100%;
+}
+.refund-policy > .bread-crumbs {
+  padding: 0;
+  margin-bottom: 2.5rem;
+}
+.refund-policy > .title-secondary {
+  margin-bottom: 1.1rem;
+}
+.refund-policy-list {
+  padding: 0;
+  margin: 0;
+}
+.refund-policy-list-item {
+  color: #0B2239;
+  font-size: 1.6rem;
+}
+.refund-policy-list-item:nth-child(1) {
+  margin-bottom: 1rem;
+}
+.refund-policy-list-item:nth-child(2) {
+  margin-bottom: 3rem;
+}
+.refund-policy-list-item:nth-child(3) {
+  font-weight: 600;
+  margin-bottom: 3rem;
+}
+.refund-policy-list-item:nth-child(4) {
+  margin-bottom: 3rem;
+  font-weight: 600;
+}
+.refund-policy-list-inside-item {
+  font-weight: 400;
+}
+.refund-policy-list-inside-item:nth-child(1) {
+  margin-top: 2rem;
+}
+.refund-policy-list-inside-item:nth-child(5), .refund-policy-list-inside-item:nth-child(6) {
+  font-weight: 400;
+}
+.refund-policy-list-inside-item:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
 /*# sourceMappingURL=style.css.map */
