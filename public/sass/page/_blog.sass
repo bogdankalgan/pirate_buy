@@ -1,0 +1,51 @@
+.blog
+    &-hero
+        background: url(../img/card-info/1.png)
+        background-repeat: no-repeat
+        background-position: center top
+        background-position-y: -8rem
+        padding-top: 3.8rem
+        margin-bottom: 4.6rem
+        & > .bread-crumbs
+            padding: 0
+        & > .title-secondary
+            margin-bottom: 2.8rem
+        &  .title-third
+            margin-bottom: 1.8rem
+            @include mobile
+                font-size: 1.8rem
+        &-popular
+            &-items
+                @include mobile
+                    display: flex
+                    flex-wrap: nowrap
+                    overflow-x: auto
+                    overflow-y: hidden
+                    &::-webkit-scrollbar
+                        display: none
+    &-cards
+        &-items
+            width: 114rem
+            display: flex
+            flex-wrap: wrap
+            gap: 3rem
+            margin-bottom: 5.9rem
+            @include mobile
+                flex-direction: column
+    &-page-cards
+        & .change-page
+            margin-right: 15.7rem
+            margin-bottom: 17.1rem
+            @include mobile
+                margin-right: 0
+                margin-bottom: 10rem
+                order: 2
+            &-container
+                display: flex
+                align-items: start
+                @include mobile
+                    flex-direction: column
+                    align-items: center
+                    & > .show-more
+                        order: 1
+                        margin-bottom: 5rem

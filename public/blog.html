@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="icons/siteIcon/Logo.svg" type="image/svg" />
+    <link rel="stylesheet" href="css/bootsrap-revboot.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Blog</title>
+  </head>
+  <body>
+    <header class="header">
+      <button class="header-burger-button" id="burgerButton">
+        <i class="fa-solid fa-bars" id="burgerButtonIcon"></i>
+      </button>
+
+      <div class="header-burger" id="burger">
+        <div class="header-burger-text">
+          <p class="header-burger-title">Choose game</p>
+        </div>
+
+        <div class="header-burger-items">
+          <a href="#" class="header-burger-item">
+            <img src="icons/burger/1.svg" alt="" />
+
+            Overwatch 2
+          </a>
+
+          <a href="#" class="header-burger-item">
+            <img src="icons/burger/2.svg" alt="" />
+
+            Hearthstone
+          </a>
+
+          <a href="#" class="header-burger-item">
+            <img src="icons/burger/3.svg" alt="" />
+
+            Counter Strike 2
+          </a>
+
+          <a href="#" class="header-burger-item">
+            <img src="icons/burger/4.svg" alt="" />
+
+            Apex legends
+          </a>
+
+          <a href="#" class="header-burger-item">
+            <img src="icons/burger/5.svg" alt="" />
+
+            Pubg
+          </a>
+
+          <a href="#" class="header-burger-item">
+            <img src="icons/burger/6.svg" alt="" />
+
+            Fortnite
+          </a>
+
+          <a href="#" class="header-burger-item">
+            <img src="icons/burger/7.svg" alt="" />
+
+            DOTA 2s
+          </a>
+
+          <a href="#" class="header-burger-item">
+            <img src="icons/burger/8.svg" alt="" />
+
+            FIFA 24
+          </a>
+        </div>
+
+        <div class="header-burger-links">
+          <a href="#" class="header-burger-link">Jobs</a>
+          <a href="#" class="header-burger-link">Support</a>
+          <a href="#" class="header-burger-link">FAQ</a>
+        </div>
+
+        <div class="header-burger-select-container">
+          <select name="" id="burgerSelect" class="header-burger-select">
+            <option value="usd">$ usd</option>
+
+            <option value="rub">₽ rub</option>
+
+            <option value="btc">₿ btc</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="header-left">
+        <div class="header-icon">
+          <a href="#">
+            <picture>
+              <source
+                srcset="./icons/siteIcon/Logo-mobile.svg"
+                media="(max-width: 375px)"
+              />
+              <img src="icons/siteIcon/Logo.svg" alt="" />
+            </picture>
+          </a>
+        </div>
+
+        <div class="header-select">
+          <div class="header-devider"></div>
+          <i class="fa-solid fa-bars" style="font-size: 15px"></i>
+          <select name="Choose game" id="" class="header-games">
+            <option value="choose">Choose game</option>
+            <option value="overwatch">Overwatch 2</option>
+            <option value="hearthstone">Hearthstone</option>
+            <option value="cs2">COUNTER STRIKE 2</option>
+            <option value="pubg">Pubg</option>
+            <option value="fortnite">Fortnite</option>
+            <option value="dota">Dota</option>
+            <option value="fifa">FIFA 24</option>
+            <option value="rocket">ROCKET LEAGUE</option>
+          </select>
+          <div class="header-devider"></div>
+        </div>
+
+        <ul class="header-list">
+          <li class="header-list-item">
+            <a href="#">Jobs</a>
+          </li>
+
+          <li class="header-list-item">
+            <a href="#">Support</a>
+          </li>
+
+          <li class="header-list-item">
+            <a href="#">FAQ</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="header-actions">
+        <button class="search-button margin-right-40px" id="searchButton">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+        <input
+          type="text"
+          class="header-actions-input"
+          placeholder="Search"
+          id="searchInput"
+        />
+
+        <button class="search-button margin-right-28px" id="searchButton">
+          <i class="fa-regular fa-user"></i>
+        </button>
+
+        <select id="" class="header-payment">
+          <option value="usd">$ usd</option>
+
+          <option value="rub">₽ rub</option>
+
+          <option value="btc">₿ btc</option>
+        </select>
+
+        <button class="trash-button margin-right-28px">
+          <i class="fa-solid fa-basket-shopping"></i>
+        </button>
+        <div class="header-devider"></div>
+
+        <button class="sign-in">Sign in</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="blog-hero">
+        <section class="bread-crumbs">
+          <button class="bread-crumbs-back">
+            <i class="fa-solid fa-arrow-left"></i>
+          </button>
+
+          <a href="#" class="bread-crumbs-link">Home</a>
+
+          <div class="bread-crumbs-i">
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+
+          <a href="#" class="bread-crumbs-current" style="color: #85919c"
+            >Refund Policy</a
+          >
+        </section>
+
+        <h2 class="title-secondary">Welcome to OUR BLOG</h2>
+
+        <div class="blog-hero-popular">
+          <h3 class="title-third">THE MOST POPULAR ARTICLES</h3>
+
+          <div class="blog-hero-popular-items">
+            <div class="blog-hero-popular-item">
+              <div class="blog-hero-popular-item-top">
+                <div class="blog-hero-popular-item-guides">
+                  <span>Guides</span>
+                </div>
+
+                <img
+                  src="icons/blog-hero-popular/icon.svg"
+                  alt=""
+                  class="blog-hero-popular-item-icon"
+                />
+              </div>
+
+              <img
+                src="img/blog-hero-popular/1.png"
+                alt=""
+                class="blog-hero-popular-item-img"
+              />
+
+              <p class="blog-hero-popular-item-title">
+                Best and worst classes for M+ and Raids in 10.1 Patch
+              </p>
+            </div>
+
+            <div class="blog-hero-popular-item">
+              <div class="blog-hero-popular-item-top">
+                <div class="blog-hero-popular-item-guides">
+                  <span>Guides</span>
+                </div>
+
+                <img
+                  src="icons/blog-hero-popular/icon.svg"
+                  alt=""
+                  class="blog-hero-popular-item-icon"
+                />
+              </div>
+
+              <img
+                src="img/blog-hero-popular/2.png"
+                alt=""
+                class="blog-hero-popular-item-img"
+              />
+
+              <p class="blog-hero-popular-item-title">
+                Best and worst classes for M+ and Raids in 10.1 Patch
+              </p>
+            </div>
+
+            <div class="blog-hero-popular-item">
+              <div class="blog-hero-popular-item-top">
+                <div class="blog-hero-popular-item-guides">
+                  <span>Guides</span>
+                </div>
+
+                <img
+                  src="icons/blog-hero-popular/icon.svg"
+                  alt=""
+                  class="blog-hero-popular-item-icon"
+                />
+              </div>
+
+              <img
+                src="img/blog-hero-popular/3.png"
+                alt=""
+                class="blog-hero-popular-item-img"
+              />
+
+              <p class="blog-hero-popular-item-title">
+                Best and worst classes for M+ and Raids in 10.1 Patch
+              </p>
+            </div>
+
+            <div class="blog-hero-popular-item">
+              <div class="blog-hero-popular-item-top">
+                <div class="blog-hero-popular-item-guides">
+                  <span>Guides</span>
+                </div>
+
+                <img
+                  src="icons/blog-hero-popular/icon.svg"
+                  alt=""
+                  class="blog-hero-popular-item-icon"
+                />
+              </div>
+
+              <img
+                src="img/blog-hero-popular/4.png"
+                alt=""
+                class="blog-hero-popular-item-img"
+              />
+
+              <p class="blog-hero-popular-item-title">
+                Best and worst classes for M+ and Raids in 10.1 Patch
+              </p>
+            </div>
+
+            <div class="blog-hero-popular-item">
+              <div class="blog-hero-popular-item-top">
+                <div class="blog-hero-popular-item-guides">
+                  <span>Guides</span>
+                </div>
+
+                <img
+                  src="icons/blog-hero-popular/icon.svg"
+                  alt=""
+                  class="blog-hero-popular-item-icon"
+                />
+              </div>
+
+              <img
+                src="img/blog-hero-popular/5.png"
+                alt=""
+                class="blog-hero-popular-item-img"
+              />
+
+              <p class="blog-hero-popular-item-title">
+                Best and worst classes for M+ and Raids in 10.1 Patch
+              </p>
+            </div>
+
+            <div class="blog-hero-popular-item">
+              <div class="blog-hero-popular-item-top">
+                <div class="blog-hero-popular-item-guides">
+                  <span>Guides</span>
+                </div>
+
+                <img
+                  src="icons/blog-hero-popular/icon.svg"
+                  alt=""
+                  class="blog-hero-popular-item-icon"
+                />
+              </div>
+
+              <img
+                src="img/blog-hero-popular/6.png"
+                alt=""
+                class="blog-hero-popular-item-img"
+              />
+
+              <p class="blog-hero-popular-item-title">
+                Best and worst classes for M+ and Raids in 10.1 Patch
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="blog-page-cards">
+        <div class="tabs-buttons">
+          <button class="tabs-buttons-item tabs-buttons-item__active">
+            ALL
+          </button>
+
+          <button class="tabs-buttons-item">Rank Boost</button>
+
+          <button class="tabs-buttons-item">Apex Packs Farm</button>
+
+          <button class="tabs-buttons-item">Badges</button>
+
+          <button class="tabs-buttons-item">Coaching</button>
+
+          <button class="tabs-buttons-item">Legends Unlocking</button>
+        </div>
+
+        <div class="container df">
+          <div class="blog-cards-items">
+            <div class="blog-cards-item">
+              <div class="blog-cards-item-top">
+                <div class="blog-hero-popular-item-guides">
+                  <span>Guides</span>
+                </div>
+
+                <img
+                  src="icons/blog-cards-item/3.svg"
+                  alt=""
+                  class="blog-cards-img"
+                />
+              </div>
+
+              <img
+                src="img/blog-cards-item/1.png"
+                alt=""
+                class="blog-cards-item-img"
+              />
+
+              <p class="blog-cards-item-title">WotLK Classic Leveling Guide</p>
+
+              <p class="blog-cards-item-descr">
+                We can help you reach the WotLK max level quickly
+              </p>
+
+              <div class="blog-cards-item-more-container">
+                <button class="blog-cards-item-more">READ MORE</button>
+              </div>
+            </div>
+
+            <div class="blog-cards-item">
+              <div class="blog-cards-item-top">
+                <div class="blog-hero-popular-item-guides">
+                  <span>Guides</span>
+                </div>
+
+                <img
+                  src="icons/blog-cards-item/1.svg"
+                  alt=""
+                  class="blog-cards-img"
+                />
+              </div>
+
+              <img
+                src="img/blog-cards-item/2.png"
+                alt=""
+                class="blog-cards-item-img"
+              />
+
+              <p class="blog-cards-item-title">WotLK Classic Leveling Guide</p>
+
+              <p class="blog-cards-item-descr">
+                We can help you reach the WotLK max level quickly
+              </p>
+
+              <div class="blog-cards-item-more-container">
+                <button class="blog-cards-item-more">READ MORE</button>
+              </div>
+            </div>
+
+            <div class="blog-cards-item">
+              <div class="blog-cards-item-top">
+                <div class="blog-hero-popular-item-guides">
+                  <span>Guides</span>
+                </div>
+
+                <img
+                  src="icons/blog-cards-item/1.svg"
+                  alt=""
+                  class="blog-cards-img"
+                />
+              </div>
+
+              <img
+                src="img/blog-cards-item/3.png"
+                alt=""
+                class="blog-cards-item-img"
+              />
+
+              <p class="blog-cards-item-title">WotLK Classic Leveling Guide</p>
+
+              <p class="blog-cards-item-descr">
+                We can help you reach the WotLK max level quickly
+              </p>
+
+              <div class="blog-cards-item-more-container">
+                <button class="blog-cards-item-more">READ MORE</button>
+              </div>
+            </div>
+
+            <div class="blog-cards-item blog-cards-item__big">
+              <div class="blog-cards-item__big-left">
+                <div class="blog-cards-item__big-left-top">
+                  <div class="blog-hero-popular-item-guides">
+                    <span>Guides</span>
+                  </div>
+
+                  <img src="icons/blog-cards-item/2.svg" alt="" />
+                </div>
+                <img
+                  src="img/blog-cards-item/4.png"
+                  alt=""
+                  class="blog-cards-item__big-img-main"
+                />
+              </div>
+
+              <div class="blog-cards-item__big-right">
+                <p class="blog-cards-item-title">
+                  Best and worst classes for M+ and Raids in 10.1 Patch
+                </p>
+
+                <p class="blog-cards-item-descr">
+                  Brave guardians, welcome to our comprehensive Destiny 2
+                  Solstice guide. After reading this article, you will learn how
+                  to level up Solstice armor sets. We will also explain how the
+                  event's mechanics work and what weapons you can get for
+                  participating in the Solstice of Heroes event.
+                </p>
+
+                <div class="blog-cards-item-more-container">
+                  <button class="blog-cards-item-more">READ MORE</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="blog-cards-item">
+              <div class="blog-cards-item-top">
+                <div class="blog-hero-popular-item-guides">
+                  <span>Guides</span>
+                </div>
+
+                <img
+                  src="icons/blog-cards-item/1.svg"
+                  alt=""
+                  class="blog-cards-img"
+                />
+              </div>
+
+              <img
+                src="img/blog-cards-item/5.png"
+                alt=""
+                class="blog-cards-item-img"
+              />
+
+              <p class="blog-cards-item-title">WotLK Classic Leveling Guide</p>
+
+              <p class="blog-cards-item-descr">
+                We can help you reach the WotLK max level quickly
+              </p>
+
+              <div class="blog-cards-item-more-container">
+                <button class="blog-cards-item-more">READ MORE</button>
+              </div>
+            </div>
+
+            <div class="blog-cards-item">
+              <div class="blog-cards-item-top">
+                <div class="blog-hero-popular-item-guides">
+                  <span>Guides</span>
+                </div>
+
+                <img
+                  src="icons/blog-cards-item/1.svg"
+                  alt=""
+                  class="blog-cards-img"
+                />
+              </div>
+
+              <img
+                src="img/blog-cards-item/6.png"
+                alt=""
+                class="blog-cards-item-img"
+              />
+
+              <p class="blog-cards-item-title">
+                Best and worst classes for M+ and Raids in 10.1 Patch
+              </p>
+
+              <p class="blog-cards-item-descr">
+                Tier Lists of Best and Worst Classes and Specializations to Play
+                in Mythic+ Dungeons and Raids in 10.1
+              </p>
+
+              <div class="blog-cards-item-more-container">
+                <button class="blog-cards-item-more">READ MORE</button>
+              </div>
+            </div>
+
+            <div class="blog-cards-item blog-cards-item__big">
+              <div class="blog-cards-item__big-left">
+                <div class="blog-cards-item__big-left-top">
+                  <div class="blog-hero-popular-item-guides">
+                    <span>Guides</span>
+                  </div>
+
+                  <img src="icons/blog-cards-item/2.svg" alt="" />
+                </div>
+                <img
+                  src="img/blog-cards-item/7.png"
+                  alt=""
+                  class="blog-cards-item__big-img-main-two"
+                />
+              </div>
+
+              <div class="blog-cards-item__big-right">
+                <p class="blog-cards-item-title">
+                  Best and worst classes for M+ and Raids in 10.1 Patch
+                </p>
+
+                <p class="blog-cards-item-descr">
+                  Brave guardians, welcome to our comprehensive Destiny 2
+                  Solstice guide. After reading this article, you will learn how
+                  to level up Solstice armor sets. We will also explain how the
+                  event's mechanics work and what weapons you can get for
+                  participating in the Solstice of Heroes event.
+                </p>
+
+                <div class="blog-cards-item-more-container">
+                  <button class="blog-cards-item-more">READ MORE</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="blog-cards-item">
+              <div class="blog-cards-item-top">
+                <div class="blog-hero-popular-item-guides">
+                  <span>Guides</span>
+                </div>
+
+                <img
+                  src="icons/blog-cards-item/1.svg"
+                  alt=""
+                  class="blog-cards-img"
+                />
+              </div>
+
+              <img
+                src="img/blog-cards-item/8.png"
+                alt=""
+                class="blog-cards-item-img"
+              />
+
+              <p class="blog-cards-item-title">WotLK Classic Leveling Guide</p>
+
+              <p class="blog-cards-item-descr">
+                We can help you reach the WotLK max level quickly
+              </p>
+
+              <div class="blog-cards-item-more-container">
+                <button class="blog-cards-item-more">READ MORE</button>
+              </div>
+            </div>
+
+            <div class="blog-cards-item">
+              <div class="blog-cards-item-top">
+                <div class="blog-hero-popular-item-guides">
+                  <span>Guides</span>
+                </div>
+
+                <img
+                  src="icons/blog-cards-item/1.svg"
+                  alt=""
+                  class="blog-cards-img"
+                />
+              </div>
+
+              <img
+                src="img/blog-cards-item/9.png"
+                alt=""
+                class="blog-cards-item-img"
+              />
+
+              <p class="blog-cards-item-title">
+                Best and worst classes for M+ and Raids in 10.1 Patch
+              </p>
+
+              <p class="blog-cards-item-descr">
+                Tier Lists of Best and Worst Classes and Specializations to Play
+                in Mythic+ Dungeons and Raids in 10.1
+              </p>
+
+              <div class="blog-cards-item-more-container">
+                <button class="blog-cards-item-more">READ MORE</button>
+              </div>
+            </div>
+
+            <div class="blog-cards-item">
+              <div class="blog-cards-item-top">
+                <div class="blog-hero-popular-item-guides">
+                  <span>Guides</span>
+                </div>
+
+                <img
+                  src="icons/blog-cards-item/1.svg"
+                  alt=""
+                  class="blog-cards-img"
+                />
+              </div>
+
+              <img
+                src="img/blog-cards-item/10.png"
+                alt=""
+                class="blog-cards-item-img"
+              />
+
+              <p class="blog-cards-item-title">WotLK Classic Leveling Guide</p>
+
+              <p class="blog-cards-item-descr">
+                We can help you reach the WotLK max level quickly
+              </p>
+
+              <div class="blog-cards-item-more-container">
+                <button class="blog-cards-item-more">READ MORE</button>
+              </div>
+            </div>
+
+            <div class="blog-cards-item">
+              <div class="blog-cards-item-top">
+                <div class="blog-hero-popular-item-guides">
+                  <span>Guides</span>
+                </div>
+
+                <img
+                  src="icons/blog-cards-item/1.svg"
+                  alt=""
+                  class="blog-cards-img"
+                />
+              </div>
+
+              <img
+                src="img/blog-cards-item/11.png"
+                alt=""
+                class="blog-cards-item-img"
+              />
+
+              <p class="blog-cards-item-title">WotLK Classic Leveling Guide</p>
+
+              <p class="blog-cards-item-descr">
+                We can help you reach the WotLK max level quickly
+              </p>
+
+              <div class="blog-cards-item-more-container">
+                <button class="blog-cards-item-more">READ MORE</button>
+              </div>
+            </div>
+
+            <div class="blog-cards-item">
+              <div class="blog-cards-item-top">
+                <div class="blog-hero-popular-item-guides">
+                  <span>Guides</span>
+                </div>
+
+                <img
+                  src="icons/blog-cards-item/1.svg"
+                  alt=""
+                  class="blog-cards-img"
+                />
+              </div>
+
+              <img
+                src="img/blog-cards-item/12.png"
+                alt=""
+                class="blog-cards-item-img"
+              />
+
+              <p class="blog-cards-item-title">
+                Best and worst classes for M+ and Raids in 10.1 Patch
+              </p>
+
+              <p class="blog-cards-item-descr">
+                Tier Lists of Best and Worst Classes and Specializations to Play
+                in Mythic+ Dungeons and Raids in 10.1
+              </p>
+
+              <div class="blog-cards-item-more-container">
+                <button class="blog-cards-item-more">READ MORE</button>
+              </div>
+            </div>
+
+            <div class="blog-cards-item">
+              <div class="blog-cards-item-top">
+                <div class="blog-hero-popular-item-guides">
+                  <span>Guides</span>
+                </div>
+
+                <img
+                  src="icons/blog-cards-item/1.svg"
+                  alt=""
+                  class="blog-cards-img"
+                />
+              </div>
+
+              <img
+                src="img/blog-cards-item/13.png"
+                alt=""
+                class="blog-cards-item-img"
+              />
+
+              <p class="blog-cards-item-title">WotLK Classic Leveling Guide</p>
+
+              <p class="blog-cards-item-descr">
+                We can help you reach the WotLK max level quickly
+              </p>
+
+              <div class="blog-cards-item-more-container">
+                <button class="blog-cards-item-more">READ MORE</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="change-page-container">
+          <div class="change-page">
+            <button class="change-page-button change-page-button__active">
+              1
+            </button>
+            <button class="change-page-button">2</button>
+            <button class="change-page-button">3</button>
+            <button class="change-page-button">4</button>
+            <button class="change-page-button-next">
+              Next <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+
+          <button class="show-more">DISCOVER MORE</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="footer-list-container">
+          <ul class="footer-list">
+            <li class="footer-list-item footer-list-item__head">
+              <a href="#">Pirate bay service</a>
+            </li>
+
+            <li class="footer-list-item">
+              <a href="#">Home </a>
+            </li>
+
+            <li class="footer-list-item">
+              <a href="#">Blogs</a>
+            </li>
+
+            <li class="footer-list-item">
+              <a href="#">FAQ</a>
+            </li>
+
+            <li class="footer-list-item">
+              <a href="#">Jobs</a>
+            </li>
+
+            <li class="footer-list-item">
+              <a href="#">Contacts</a>
+            </li>
+
+            <li class="footer-list-item">
+              <a href="#">Request a service</a>
+            </li>
+          </ul>
+
+          <ul class="footer-list">
+            <li class="footer-list-item footer-list-item__head">
+              <a href="#">LEGAL</a>
+            </li>
+
+            <li class="footer-list-item">
+              <a href="#">Terms and conditions </a>
+            </li>
+
+            <li class="footer-list-item">
+              <a href="#">Privacy policy </a>
+            </li>
+
+            <li class="footer-list-item">
+              <a href="#">Refund policy </a>
+            </li>
+
+            <li class="footer-list-item">
+              <a href="#">Cookies policy </a>
+            </li>
+          </ul>
+        </div>
+
+        <ul class="footer-list mobile-margin-bottom-44px">
+          <li class="footer-list-item footer-list-item__head">
+            <a href="#">Contact US</a>
+          </li>
+
+          <li class="footer-list-item">
+            <a href="#">131 rue Pierre Brunies, 46000 CAHORS, France.</a>
+          </li>
+
+          <li class="footer-list-item">
+            <a href="#">support@piratebay-service.com</a>
+          </li>
+
+          <li class="footer-list-item">
+            <a href="#">Reg.No. W461006961</a>
+          </li>
+        </ul>
+
+        <div class="footer-social">
+          <p class="footer-social-title">SOCIAL NETWORKS</p>
+
+          <div class="footer-social-items">
+            <div class="social-item">
+              <a href="#" class="social-icon"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+            </div>
+
+            <div class="social-item">
+              <a href="#" class="social-icon"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+            </div>
+
+            <div class="social-item">
+              <a href="#" class="social-icon"
+                ><i class="fa-brands fa-square-instagram"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <ul
+          class="footer-list footer-list-order mobile-margin-bottom-50px mobile-display-flex"
+        >
+          <li class="footer-list-item__head footer-list-item">
+            <a href="#">GAMES</a>
+          </li>
+
+          <div class="footer-list-items">
+            <div class="footer-list-item-container">
+              <li class="footer-list-item">
+                <a href="#">Overwatch 2</a>
+              </li>
+
+              <li class="footer-list-item">
+                <a href="#">Hearthstone</a>
+              </li>
+
+              <li class="footer-list-item">
+                <a href="#">Apex</a>
+              </li>
+
+              <li class="footer-list-item">
+                <a href="#">legends</a>
+              </li>
+            </div>
+
+            <div class="footer-list-item-container">
+              <li class="footer-list-item">
+                <a href="#">Counter Strike 2</a>
+              </li>
+
+              <li class="footer-list-item">
+                <a href="#">Pubg</a>
+              </li>
+
+              <li class="footer-list-item">
+                <a href="#">legendFortnites</a>
+              </li>
+            </div>
+
+            <div class="footer-list-item-container">
+              <li class="footer-list-item">
+                <a href="#">Dota 2</a>
+              </li>
+
+              <li class="footer-list-item">
+                <a href="#">FIFA 22</a>
+              </li>
+            </div>
+          </div>
+        </ul>
+      </div>
+
+      <div class="footer-mid">
+        <ul
+          class="footer-list footer-list-order mobile-margin-bottom-50px mobile-display-none"
+        >
+          <li class="footer-list-item__head footer-list-item">
+            <a href="#">GAMES</a>
+          </li>
+
+          <div class="footer-list-items">
+            <div class="footer-list-item-container">
+              <li class="footer-list-item">
+                <a href="#">Overwatch 2</a>
+              </li>
+
+              <li class="footer-list-item">
+                <a href="#">Hearthstone</a>
+              </li>
+
+              <li class="footer-list-item">
+                <a href="#">Apex</a>
+              </li>
+
+              <li class="footer-list-item">
+                <a href="#">legends</a>
+              </li>
+            </div>
+
+            <div class="footer-list-item-container">
+              <li class="footer-list-item">
+                <a href="#">Counter Strike 2</a>
+              </li>
+
+              <li class="footer-list-item">
+                <a href="#">Pubg</a>
+              </li>
+
+              <li class="footer-list-item">
+                <a href="#">legendFortnites</a>
+              </li>
+            </div>
+
+            <div class="footer-list-item-container">
+              <li class="footer-list-item">
+                <a href="#">Dota 2</a>
+              </li>
+
+              <li class="footer-list-item">
+                <a href="#">FIFA 22</a>
+              </li>
+            </div>
+          </div>
+        </ul>
+
+        <div class="footer-payment">
+          <div class="footer-list-item footer-list-item__head">
+            <a href="#">Payment methods</a>
+          </div>
+
+          <div class="footer-payment-icons">
+            <img src="icons/footer/1.svg" alt="" />
+            <img src="icons/footer/2.svg" alt="" />
+            <img src="icons/footer/3.svg" alt="" />
+            <img src="icons/footer/4.svg" alt="" />
+            <img src="icons/footer/5.svg" alt="" />
+            <img src="icons/footer/6.svg" alt="" />
+            <img src="icons/footer/7.svg" alt="" />
+            <img src="icons/footer/8.svg" alt="" />
+          </div>
+
+          <div class="footer-rev">
+            <img src="icons/hero/1.svg" alt="" />
+            <p class="footer-rev-text">4.89 out of 5 based on 1459 reviews</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-bottom-text">
+          © Pirate Bay Services 2023. All right s reserved. 131 rue Pierre
+          Brunies, 46000 CAHORS, France. Reg.No. W461006961 All copyrights,
+          trade marks and service marks belong to their corresponding owners.
+          All mentioned brand names and related materials, logos and images are
+          registered property of the respective companies. Pirate Bay Services
+          is not associated with or endorsed by any copyright owner in any way
+          and offers services to players in different online games to make their
+          gaming experience better.
+        </p>
+
+        <form action="" class="footer-form">
+          <p class="footer-form-title">SUBSCRIBE TO NEWS</p>
+
+          <div class="footer-form-container">
+            <div class="footer-form-input">
+              <input
+                type="email"
+                name=""
+                id="footerInput"
+                placeholder="Sign up  to be in touch"
+              />
+              <label for="footerInput" id="footerLabel">
+                <img src="icons/footer/letter.svg" alt="" />
+              </label>
+            </div>
+
+            <button class="subscribe">SUBSCRIBE</button>
+          </div>
+        </form>
+      </div>
+    </footer>
+
+    <script src="./headerInput.js"></script>
+    <script src="./mobileMargins.js"></script>
+    <script src="./gameCardItems.js"></script>
+    <script src="./question.js"></script>
+    <script src="./footerInput.js"></script>
+    <script src="./burger.js"></script>
+    <script src="./profile-list-items.js"></script>
+  </body>
+</html>

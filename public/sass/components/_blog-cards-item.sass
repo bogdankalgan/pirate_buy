@@ -1,0 +1,110 @@
+.blog-cards-item
+    background: $color-blue-dark
+    display: inline-block
+    padding: 2rem 1.8rem 7.4rem 2rem
+    position: relative
+    height: 44.5rem
+    border-radius: .9rem
+    color: $color-white
+    width: 36rem
+    @include mobile
+        width: 34.5rem
+    &__big
+        display: flex
+        align-items: start
+        justify-content: space-between
+        position: relative
+        padding: 1.9rem 3rem 7.4rem 2rem
+        width: 75rem
+        @include mobile
+            flex-direction: column
+            width: 34.5rem
+            height: 59.2rem
+            &-img-main
+                @include mobile
+                    content: url(../img/blog-cards-item/4-mobile.png)
+                &-two
+                    @include mobile
+                        content: url(../img/blog-cards-item/7-mobile.png)
+        &  .blog-cards-item-title
+            width: 29rem
+            text-align: left
+            @include mobile
+                text-align: center
+        &-left
+            margin-right: 5.8rem
+            img
+                position: absolute
+                z-index: 0
+                top: 0
+                left: 0
+            &-top
+                display: flex
+                align-items: start
+                justify-content: space-between
+                width: 35rem
+                @include mobile
+                    width: 30.5rem
+                img
+                    z-index: 1
+                    position: relative
+                    top: auto
+                    left: auto
+        &-right
+            padding-top: 5.3rem
+            display: flex
+            flex-direction: column
+            align-items: start
+            & > .blog-cards-item-descr
+                text-align: left
+                width: 29rem
+                @include mobile
+                    text-align: center
+    &-top
+        display: flex
+        align-items: center
+        justify-content: space-between
+        position: relative
+        z-index: 1
+        margin-bottom: 18.8rem
+    &-img
+        position: absolute
+        z-index: 0
+        width: 100%
+        height: 31rem
+        top: 0
+        left: 0
+    &-title
+        position: relative
+        z-index: 1
+        font-size: 1.8rem
+        font-weight: 700
+        margin-bottom: 1.5rem
+        text-align: center
+    &-descr
+        position: relative
+        z-index: 1
+        font-size: 1.4rem
+        margin-bottom: .6rem
+        text-align: center
+        width: 30rem
+    &-more
+        position: relative
+        z-index: 1
+        text-align: center
+        background: none
+        border: none
+        color: $color-white
+        font-size: 1.2rem
+        font-weight: 700
+        transition: all .3s
+        &:focus
+            outline: none
+        &:hover
+            color: $color-orange
+        &:active
+            color: $color-white
+        &-container
+            text-align: center
+            @include mobile
+                width: 100%
