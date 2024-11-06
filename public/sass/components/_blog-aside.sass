@@ -1,0 +1,21 @@
+.blog-aside
+    background: $color-blue-dark
+    display: flex
+    flex-direction: column
+    padding: 5.3rem 14.3rem 7.1rem 6rem
+    border-radius: 1rem
+    height: 61.9rem
+    @include mobile
+        display: none
+    &-title
+        color: $color-grey-vs
+        font-size: 1.8rem
+        margin-bottom: 4rem
+        font-weight: bold
+    & > .header-burger-item::after
+        display: none
+    & > .header-burger-item
+        font-size: 1.6rem
+        padding-bottom: 0
+        &:not(:last-child)
+            margin-bottom: 3.5rem

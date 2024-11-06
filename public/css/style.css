@@ -2511,6 +2511,74 @@ section {
   }
 }
 
+.blog-aside {
+  background: #0B2239;
+  display: flex;
+  flex-direction: column;
+  padding: 5.3rem 14.3rem 7.1rem 6rem;
+  border-radius: 1rem;
+  height: 61.9rem;
+}
+@media (max-width: 375px) {
+  .blog-aside {
+    display: none;
+  }
+}
+.blog-aside-title {
+  color: #85919C;
+  font-size: 1.8rem;
+  margin-bottom: 4rem;
+  font-weight: bold;
+}
+.blog-aside > .header-burger-item::after {
+  display: none;
+}
+.blog-aside > .header-burger-item {
+  font-size: 1.6rem;
+  padding-bottom: 0;
+}
+.blog-aside > .header-burger-item:not(:last-child) {
+  margin-bottom: 3.5rem;
+}
+
+.blog-article-aside {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 6.5rem 4rem 5.7rem 4rem;
+  height: 60rem;
+  border-radius: 1rem;
+  border: 1px solid #DAE3EA;
+}
+@media (max-width: 375px) {
+  .blog-article-aside {
+    display: none;
+  }
+}
+.blog-article-aside-title {
+  color: #455769;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 4.2rem;
+}
+.blog-article-aside-link {
+  color: #85919C;
+  font-size: 2.4rem;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+.blog-article-aside-link:not(:last-child) {
+  margin-bottom: 4rem;
+}
+.blog-article-aside-link:hover {
+  color: #2F4357;
+  text-decoration: none;
+}
+.blog-article-aside-link:active {
+  color: #85919C;
+}
+
 .footer {
   background: #0B2239;
   padding: 9.1rem 19.2rem 2.2rem 19.5rem;
@@ -4379,6 +4447,7 @@ section {
   }
 }
 .blog-cards-items {
+  margin-right: 3rem;
   width: 114rem;
   display: flex;
   flex-wrap: wrap;
@@ -4413,6 +4482,151 @@ section {
   .blog-page-cards .change-page-container > .show-more {
     order: 1;
     margin-bottom: 5rem;
+  }
+}
+
+.blog-article-bread-crumbs {
+  padding-top: 3.8rem;
+  margin-bottom: 6.1rem;
+}
+.blog-article-text {
+  display: inline-block;
+  margin-bottom: 1.7rem;
+}
+.blog-article-text > .blog-hero-popular-item-guides {
+  display: inline-block;
+}
+.blog-article-text > .title-secondary {
+  margin-bottom: 0.9rem;
+}
+.blog-article-hero {
+  background: #fff;
+  padding: 0;
+  margin-bottom: 8.6rem;
+  margin-right: 3.1rem;
+}
+.blog-article-hero-text {
+  padding: 0 13rem;
+  padding-bottom: 10.3rem;
+}
+@media (max-width: 375px) {
+  .blog-article-hero-text {
+    padding: 0 1.5rem;
+    padding-bottom: 7.1rem;
+    width: 31.5rem;
+  }
+}
+.blog-article-hero-text > .descr {
+  width: 88rem;
+}
+@media (max-width: 375px) {
+  .blog-article-hero-text > .descr {
+    width: 31.5rem;
+  }
+}
+.blog-article-hero-text > .descr:nth-child(1) {
+  margin-bottom: 1.4rem;
+}
+.blog-article-hero-text > .descr:nth-child(2) {
+  margin-bottom: 2.2rem;
+}
+.blog-article-hero-text > .card-info-ul {
+  width: 75rem;
+}
+@media (max-width: 375px) {
+  .blog-article-hero-text > .card-info-ul {
+    width: 100%;
+  }
+}
+.blog-article-hero img {
+  margin-bottom: 6rem;
+}
+@media (max-width: 375px) {
+  .blog-article-hero img {
+    width: 34.5rem;
+    height: 19rem;
+  }
+}
+.blog-article-main {
+  background: #F8FBFF;
+}
+.blog-article-main > .container {
+  padding: 0 19.5rem;
+}
+@media (max-width: 375px) {
+  .blog-article-main > .container {
+    padding: 0 1.5rem;
+  }
+}
+.blog-article-check {
+  background: #0B2239;
+  padding: 6.7rem 14.5rem;
+  margin-bottom: 8.6rem;
+}
+@media (max-width: 375px) {
+  .blog-article-check {
+    padding: 14.3rem 0 9.2rem 1.5rem;
+  }
+}
+.blog-article-check > .title-secondary {
+  color: #fff;
+  margin-bottom: 2.2rem;
+  width: 114rem;
+  font-weight: 800;
+  padding-left: 7rem;
+}
+@media (max-width: 375px) {
+  .blog-article-check > .title-secondary {
+    width: 100%;
+  }
+}
+.blog-article-check-cards {
+  display: flex;
+  align-items: center;
+  position: relative;
+  gap: 3rem;
+}
+@media (max-width: 375px) {
+  .blog-article-check-cards {
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+  .blog-article-check-cards::-webkit-scrollbar {
+    display: none;
+  }
+}
+.blog-article-check-cards > .slider {
+  position: relative;
+  left: auto;
+}
+.blog-article-check-cards > .also-cards-button {
+  position: relative;
+  right: auto;
+}
+.blog-article-check-cards > .game-card {
+  background: #fff;
+}
+.blog-article-check-cards > .slider {
+  color: #fff;
+}
+.blog-article-other {
+  margin-bottom: 12rem;
+}
+.blog-article-other > .title-secondary {
+  padding-left: 6.5rem;
+  margin-bottom: 1.6rem;
+}
+.blog-article-other-cards {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+@media (max-width: 375px) {
+  .blog-article-other-cards {
+    overflow-x: auto;
+  }
+  .blog-article-other-cards::-webkit-scrollbar {
+    display: none;
   }
 }
 

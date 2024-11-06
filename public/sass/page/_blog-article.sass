@@ -1,0 +1,93 @@
+.blog-article
+    &-bread-crumbs
+        padding-top: 3.8rem
+        margin-bottom: 6.1rem
+    &-text
+        display: inline-block
+        margin-bottom: 1.7rem
+        & > .blog-hero-popular-item-guides
+            display: inline-block
+        & > .title-secondary
+            margin-bottom: .9rem
+    &-hero
+        background: $color-white
+        padding: 0
+        margin-bottom: 8.6rem
+        margin-right: 3.1rem
+        &-text
+            padding: 0 13rem
+            padding-bottom: 10.3rem
+            @include mobile
+                padding: 0 1.5rem
+                padding-bottom: 7.1rem
+                width: 31.5rem
+            & > .descr
+                width: 88rem
+                @include mobile
+                    width: 31.5rem
+                &:nth-child(1)
+                    margin-bottom: 1.4rem
+                &:nth-child(2)
+                    margin-bottom: 2.2rem
+            & > .card-info-ul
+                width: 75rem
+                @include mobile
+                    width: 100%
+        img
+            margin-bottom: 6rem
+            @include mobile
+                width: 34.5rem
+                height: 19rem
+    &-main
+        background: $color-white-light
+        & > .container
+            padding: 0 19.5rem
+            @include mobile
+                padding: 0 1.5rem
+    &-check
+        background: $color-blue-dark
+        padding: 6.7rem 14.5rem
+        margin-bottom: 8.6rem
+        @include mobile
+            padding: 14.3rem 0 9.2rem 1.5rem
+        & > .title-secondary
+            color: $color-white
+            margin-bottom: 2.2rem
+            width: 114rem
+            font-weight: 800
+            padding-left: 7rem
+            @include mobile
+                width: 100%
+        &-cards
+            display: flex
+            align-items: center
+            position: relative
+            gap: 3rem
+            @include mobile
+                overflow-x: auto
+                overflow-y: hidden
+                &::-webkit-scrollbar
+                    display: none
+            & > .slider
+                position: relative
+                left: auto
+            & > .also-cards-button
+                position: relative
+                right: auto
+            & > .game-card
+                background: $color-white
+            & > .slider
+                color: $color-white
+    &-other
+        margin-bottom: 12rem
+        & > .title-secondary
+            padding-left: 6.5rem
+            margin-bottom: 1.6rem
+        &-cards
+            display: flex
+            align-items: center
+            gap: 3rem
+            @include mobile
+                overflow-x: auto
+                &::-webkit-scrollbar
+                    display: none

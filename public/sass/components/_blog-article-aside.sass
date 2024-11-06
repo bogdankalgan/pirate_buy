@@ -1,0 +1,28 @@
+.blog-article-aside
+    background: $color-white
+    display: flex
+    flex-direction: column
+    padding: 6.5rem 4rem 5.7rem 4rem
+    height: 60rem
+    border-radius: 1rem
+    border: 1px solid $color-white-border
+    @include mobile
+        display: none
+    &-title
+        color: $color-blue-blog-article-aside
+        text-transform: uppercase
+        font-size: 1.8rem
+        font-weight: bold
+        margin-bottom: 4.2rem
+    &-link
+        color: $color-grey-vs
+        font-size: 2.4rem
+        font-weight: 500
+        transition: all .3s
+        &:not(:last-child)
+            margin-bottom: 4rem
+        &:hover
+            color: $bcg-button
+            text-decoration: none
+        &:active
+            color: $color-grey-vs
