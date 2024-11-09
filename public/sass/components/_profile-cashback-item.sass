@@ -1,0 +1,62 @@
+.profile-cashback-item
+    display: flex
+    align-items: center
+    padding: 3rem 2.7rem
+    border: 1px solid $color-grey-profile-cashback-window
+    border-radius: .7rem
+    background: none
+    width: 45rem
+    margin-bottom: 2rem
+    @include mobile
+        width: 28.5rem
+        flex-wrap: wrap
+
+    &:focus
+        outline: none
+    &:hover
+        border-color: $color-black
+    &:active
+        border-block-start-color: $color-blue-dark
+    &__active
+        border-color: $color-blue-dark
+        & .profile-cashback-item-input::before
+            border-color: $color-blue-dark
+        & .profile-cashback-item-input::after
+            display: inline-block
+    &-buy
+        display: flex
+        align-items: center
+        margin-right: 10.2rem
+        @include mobile
+            margin-right: 0
+        & > .title-third
+            margin-right: 1rem
+    &-input
+        appearance: none
+        position: relative
+        &::before
+            content: " "
+            display: inline-block
+            width: 2.2rem
+            height: 2.2rem
+            border-radius: 50%
+            border: 2px solid $color-grey-border
+            position: relative
+            margin-right: 1.7rem
+        &::after
+            content: " "
+            display: inline-block
+            width: 1.6rem
+            height: 1.6rem
+            border-radius: 50%
+            background: $color-blue-dark
+            position: absolute
+            top: 11%
+            left: 8.5%
+            display: none
+    &-coins
+        font-size: 2.4rem
+        font-weight: 700
+        color: $color-blue-dark
+        span
+            color: $color-orange

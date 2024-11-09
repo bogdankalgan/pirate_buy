@@ -2541,6 +2541,88 @@ section {
   margin-bottom: 3.5rem;
 }
 
+.profile-cashback-item {
+  display: flex;
+  align-items: center;
+  padding: 3rem 2.7rem;
+  border: 1px solid #C2C8CE;
+  border-radius: 0.7rem;
+  background: none;
+  width: 45rem;
+  margin-bottom: 2rem;
+}
+@media (max-width: 375px) {
+  .profile-cashback-item {
+    width: 28.5rem;
+    flex-wrap: wrap;
+  }
+}
+.profile-cashback-item:focus {
+  outline: none;
+}
+.profile-cashback-item:hover {
+  border-color: #141414;
+}
+.profile-cashback-item:active {
+  border-block-start-color: #0B2239;
+}
+.profile-cashback-item__active {
+  border-color: #0B2239;
+}
+.profile-cashback-item__active .profile-cashback-item-input::before {
+  border-color: #0B2239;
+}
+.profile-cashback-item__active .profile-cashback-item-input::after {
+  display: inline-block;
+}
+.profile-cashback-item-buy {
+  display: flex;
+  align-items: center;
+  margin-right: 10.2rem;
+}
+@media (max-width: 375px) {
+  .profile-cashback-item-buy {
+    margin-right: 0;
+  }
+}
+.profile-cashback-item-buy > .title-third {
+  margin-right: 1rem;
+}
+.profile-cashback-item-input {
+  appearance: none;
+  position: relative;
+}
+.profile-cashback-item-input::before {
+  content: " ";
+  display: inline-block;
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 50%;
+  border: 2px solid #B6BDC4;
+  position: relative;
+  margin-right: 1.7rem;
+}
+.profile-cashback-item-input::after {
+  content: " ";
+  display: inline-block;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+  background: #0B2239;
+  position: absolute;
+  top: 11%;
+  left: 8.5%;
+  display: none;
+}
+.profile-cashback-item-coins {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #0B2239;
+}
+.profile-cashback-item-coins span {
+  color: #F36B25;
+}
+
 .blog-article-aside {
   background: #fff;
   display: flex;
@@ -4628,6 +4710,248 @@ section {
   .blog-article-other-cards::-webkit-scrollbar {
     display: none;
   }
+}
+
+.profile-cashback-content {
+  padding: 3.8rem 23.5rem 15.9rem 19.5rem;
+  width: 100%;
+}
+@media (max-width: 375px) {
+  .profile-cashback-content {
+    padding: 1.9rem 1.5rem 32.7rem 1.5rem;
+  }
+}
+.profile-cashback-content > .bread-crumbs {
+  padding: 0;
+}
+.profile-cashback-content > .title-secondary {
+  margin-bottom: 2.5rem;
+}
+.profile-cashback-window {
+  border: 1px solid #DAE3EA;
+  border-radius: 0.7rem;
+  padding: 1.8rem 4rem 6.8rem 3.9rem;
+  width: 100%;
+}
+@media (max-width: 375px) {
+  .profile-cashback-window {
+    padding: 1.8rem 3rem 8.1rem 3rem;
+  }
+}
+.profile-cashback-window > .profile-window-top-list {
+  position: relative;
+  margin-bottom: 8.4rem;
+  overflow-y: hidden;
+}
+.profile-cashback-window > .profile-window-top-list::-webkit-scrollbar {
+  display: none;
+}
+.profile-cashback-window > .profile-window-top-list::after {
+  content: " ";
+  display: inline-block;
+  position: absolute;
+  width: 106.8%;
+  height: 1px;
+  background: #DAE3EA;
+  bottom: -1.4rem;
+  left: -3.9rem;
+}
+.profile-cashback-window-cashback {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 9.1rem;
+}
+@media (max-width: 375px) {
+  .profile-cashback-window-cashback {
+    margin-bottom: 7.9rem;
+  }
+}
+.profile-cashback-window-cashback > .title-third {
+  margin-bottom: 2.4rem;
+}
+@media (max-width: 375px) {
+  .profile-cashback-window-cashback {
+    flex-direction: column;
+    align-items: start;
+  }
+}
+@media (max-width: 375px) {
+  .profile-cashback-window-cashback-left {
+    width: 100%;
+    order: 2;
+  }
+}
+.profile-cashback-window-cashback-left > .gold-button {
+  width: 100%;
+}
+@media (max-width: 375px) {
+  .profile-cashback-window-cashback-left > .gold-button {
+    margin-bottom: 0;
+  }
+}
+.profile-cashback-window-cashback-left > .descr {
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+.profile-cashback-window-cashback-left > .descr-thin {
+  font-size: 1.8rem;
+  color: #0B2239;
+  margin-bottom: 1.9rem;
+}
+@media (max-width: 375px) {
+  .profile-cashback-window-cashback-right {
+    order: 1;
+    margin-bottom: 4.6rem;
+  }
+}
+.profile-cashback-window-cashback-right-img {
+  display: flex;
+  align-items: center;
+}
+.profile-cashback-window-cashback-right-text {
+  font-size: 6.4rem;
+  color: #0B2239;
+  font-weight: bold;
+}
+@media (max-width: 375px) {
+  .profile-cashback-window-cashback-right-text {
+    font-size: 4.8rem;
+    white-space: nowrap;
+    letter-spacing: 0;
+  }
+}
+.profile-cashback-window-cashback-right-text span {
+  color: #F36B25;
+}
+@media (max-width: 375px) {
+  .profile-cashback-window-cashback-right-text span {
+    font-size: 3rem;
+  }
+}
+.profile-cashback-window-cashback-right img:nth-child(1) {
+  margin-right: 2.3rem;
+}
+.profile-cashback-window-cashback-right > .descr {
+  font-weight: 800;
+  color: #85919C;
+  text-transform: uppercase;
+  margin-bottom: 1.1rem;
+}
+.profile-cashback-window-mycupon {
+  margin-bottom: 7rem;
+}
+@media (max-width: 375px) {
+  .profile-cashback-window-mycupon {
+    margin-bottom: 5.9rem;
+  }
+}
+.profile-cashback-window-mycupon > .title-third {
+  margin-bottom: 2.8rem;
+}
+.profile-cashback-window-mycupon-item {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0 1.5rem 0;
+  border-bottom: 1px solid #B6BDC4;
+  width: 71rem;
+}
+@media (max-width: 375px) {
+  .profile-cashback-window-mycupon-item {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+}
+.profile-cashback-window-mycupon-item:nth-child(3) {
+  margin-bottom: 3rem;
+}
+.profile-cashback-window-mycupon-item:nth-child(1) {
+  border-top: 1px solid #B6BDC4;
+}
+.profile-cashback-window-mycupon-item img {
+  margin-right: 3rem;
+}
+@media (max-width: 375px) {
+  .profile-cashback-window-mycupon-item img {
+    margin-right: 8rem;
+    margin-bottom: 1.5rem;
+  }
+}
+.profile-cashback-window-mycupon-item-title {
+  margin-right: 0.4rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.profile-cashback-window-mycupon-item i {
+  margin-right: 29rem;
+  font-size: 1.5rem;
+  color: #B6BDC4;
+}
+@media (max-width: 375px) {
+  .profile-cashback-window-mycupon-item i {
+    margin-right: 0;
+  }
+}
+.profile-cashback-window-mycupon-item-copy {
+  background: none;
+  border: none;
+}
+.profile-cashback-window-mycupon-item-copy:focus {
+  outline: none;
+}
+.profile-cashback-window-mycupon-item-copy:hover {
+  color: #F36B25;
+}
+.profile-cashback-window-mycupon-item-copy:active {
+  color: #B6BDC4;
+}
+.profile-cashback-window-mycupon-item-sale {
+  color: #0B2239;
+  font-size: 1.8rem;
+}
+.profile-cashback-window-transaction > .title-third {
+  margin-bottom: 2.8rem;
+}
+.profile-cashback-window-transaction-item {
+  display: flex;
+  align-items: center;
+  padding: 2.3rem 0 2rem 0;
+  border-bottom: 1px solid #B6BDC4;
+  width: 71rem;
+}
+@media (max-width: 375px) {
+  .profile-cashback-window-transaction-item {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+}
+.profile-cashback-window-transaction-item:nth-child(1) {
+  border-top: 1px solid #B6BDC4;
+}
+.profile-cashback-window-transaction-item:nth-child(2) .profile-cashback-window-transaction-item-title span {
+  color: #F36B25;
+}
+.profile-cashback-window-transaction-item:nth-child(3) {
+  margin-bottom: 3rem;
+}
+.profile-cashback-window-transaction-item-title {
+  color: #85919C;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-right: 9.9rem;
+  text-transform: uppercase;
+}
+.profile-cashback-window-transaction-item-title span {
+  color: #539415;
+}
+.profile-cashback-window-transaction-item-ornumber {
+  color: #0B2239;
+  font-size: 1.8rem;
+  margin-right: 13.5rem;
+}
+.profile-cashback-window-transaction-item-date {
+  color: #0B2239;
+  font-size: 1.6rem;
 }
 
 /*# sourceMappingURL=style.css.map */
