@@ -5165,4 +5165,131 @@ section {
   width: 100%;
 }
 
+.thanks-hero {
+  background: url(../img/thanks/bcg.png), #0B2239;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 10.9rem 57.3rem 10.5rem 45.5rem;
+  margin-bottom: 5rem;
+  overflow: hidden;
+}
+.thanks-hero-title {
+  font-size: 3.6rem;
+  margin-bottom: 4.2rem;
+}
+.thanks-hero-title span {
+  font-size: 8.4rem;
+}
+.thanks-detail {
+  padding: 0 58.8rem 0 45.5rem;
+}
+.thanks-detail-button {
+  background: #FFC924;
+  padding: 1.9rem 4.5rem;
+  border-radius: 0.7rem;
+  color: #0B2239;
+  font-size: 1.6rem;
+  font-weight: bold;
+  border: none;
+  transition: all 0.3s;
+  margin-bottom: 8.9rem;
+}
+.thanks-detail-button:focus {
+  outline: none;
+}
+.thanks-detail-button:hover {
+  background: #F36B25;
+}
+.thanks-detail-button:active {
+  background: #FFC924;
+}
+.thanks-detail-text {
+  font-size: 1.2rem;
+  color: #0B2239;
+  margin-bottom: 4rem;
+}
+.thanks-detail-title {
+  margin-bottom: 3.9rem;
+  font-size: 3rem;
+}
+.thanks-detail-purchase {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+.thanks-detail-purchase .descr {
+  font-size: 1.8rem;
+}
+.thanks-detail-purchase .descr:nth-child(1) {
+  margin-bottom: 0.9rem;
+}
+.thanks-detail-purchase .descr span {
+  font-weight: 700;
+}
+.thanks-detail-purchase img {
+  margin-right: 3rem;
+}
+.thanks-detail-block {
+  padding: 2.4rem;
+  border: 1px solid #DAE3EA;
+}
+.thanks-detail-block:not(:last-child) {
+  margin-bottom: 3rem;
+}
+.thanks-detail-block > .descr {
+  font-weight: bold;
+  margin-bottom: 1.6rem;
+}
+.thanks-detail-block-title {
+  font-weight: bold;
+  margin-bottom: 1.6rem;
+}
+.thanks-detail-block-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.thanks-detail-block-item > .descr span {
+  font-weight: 600;
+}
+.thanks-detail-block-item:not(:last-child) {
+  margin-bottom: 2.4rem;
+}
+.thanks-detail-total {
+  margin-bottom: 6rem;
+}
+.thanks-detail-total-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.thanks-detail-total-item:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.thanks-detail-total-item:nth-child(2) {
+  margin-bottom: 2.3rem;
+}
+.thanks-detail-total-item-title {
+  font-size: 1.8rem;
+}
+.thanks-detail-total-item-price {
+  font-size: 1.8rem;
+}
+.thanks-detail-total-item__head {
+  font-weight: bold;
+}
+.thanks-detail-total-item__head-title {
+  font-size: 2.4rem;
+}
+.thanks-detail-total-item__head-price {
+  font-size: 2.4rem;
+}
+.thanks-also {
+  padding: 0 15rem;
+  margin-bottom: 7.4rem;
+}
+.thanks-also .also-cards-button__first {
+  left: 31rem;
+}
+
 /*# sourceMappingURL=style.css.map */

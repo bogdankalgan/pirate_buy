@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="icons/siteIcon/Logo.svg" type="image/svg" />
+    <link rel="stylesheet" href="css/bootsrap-revboot.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Thenk you</title>
+  </head>
+  <body>
+    <header class="header">
+      <button class="header-burger-button" id="burgerButton">
+        <i class="fa-solid fa-bars" id="burgerButtonIcon"></i>
+      </button>
+
+      <div class="header-burger" id="burger">
+        <div class="header-burger-text">
+          <p class="header-burger-title">Choose game</p>
+        </div>
+
+        <div class="header-burger-items">
+          <a href="#" class="header-burger-item">
+            <img src="icons/burger/1.svg" alt="" />
+
+            Overwatch 2
+          </a>
+
+          <a href="#" class="header-burger-item">
+            <img src="icons/burger/2.svg" alt="" />
+
+            Hearthstone
+          </a>
+
+          <a href="#" class="header-burger-item">
+            <img src="icons/burger/3.svg" alt="" />
+
+            Counter Strike 2
+          </a>
+
+          <a href="#" class="header-burger-item">
+            <img src="icons/burger/4.svg" alt="" />
+
+            Apex legends
+          </a>
+
+          <a href="#" class="header-burger-item">
+            <img src="icons/burger/5.svg" alt="" />
+
+            Pubg
+          </a>
+
+          <a href="#" class="header-burger-item">
+            <img src="icons/burger/6.svg" alt="" />
+
+            Fortnite
+          </a>
+
+          <a href="#" class="header-burger-item">
+            <img src="icons/burger/7.svg" alt="" />
+
+            DOTA 2s
+          </a>
+
+          <a href="#" class="header-burger-item">
+            <img src="icons/burger/8.svg" alt="" />
+
+            FIFA 24
+          </a>
+        </div>
+
+        <div class="header-burger-links">
+          <a href="#" class="header-burger-link">Jobs</a>
+          <a href="#" class="header-burger-link">Support</a>
+          <a href="#" class="header-burger-link">FAQ</a>
+        </div>
+
+        <div class="header-burger-select-container">
+          <select name="" id="burgerSelect" class="header-burger-select">
+            <option value="usd">$ usd</option>
+
+            <option value="rub">₽ rub</option>
+
+            <option value="btc">₿ btc</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="header-left">
+        <div class="header-icon">
+          <a href="#">
+            <picture>
+              <source
+                srcset="./icons/siteIcon/Logo-mobile.svg"
+                media="(max-width: 375px)"
+              />
+              <img src="icons/siteIcon/Logo.svg" alt="" />
+            </picture>
+          </a>
+        </div>
+
+        <div class="header-select">
+          <div class="header-devider"></div>
+          <i class="fa-solid fa-bars" style="font-size: 15px"></i>
+          <select name="Choose game" id="" class="header-games">
+            <option value="choose">Choose game</option>
+            <option value="overwatch">Overwatch 2</option>
+            <option value="hearthstone">Hearthstone</option>
+            <option value="cs2">COUNTER STRIKE 2</option>
+            <option value="pubg">Pubg</option>
+            <option value="fortnite">Fortnite</option>
+            <option value="dota">Dota</option>
+            <option value="fifa">FIFA 24</option>
+            <option value="rocket">ROCKET LEAGUE</option>
+          </select>
+          <div class="header-devider"></div>
+        </div>
+
+        <ul class="header-list">
+          <li class="header-list-item">
+            <a href="#">Jobs</a>
+          </li>
+
+          <li class="header-list-item">
+            <a href="#">Support</a>
+          </li>
+
+          <li class="header-list-item">
+            <a href="#">FAQ</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="header-actions">
+        <button class="search-button margin-right-40px" id="searchButton">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+        <input
+          type="text"
+          class="header-actions-input"
+          placeholder="Search"
+          id="searchInput"
+        />
+
+        <button class="search-button margin-right-28px" id="searchButton">
+          <i class="fa-regular fa-user"></i>
+        </button>
+
+        <select id="" class="header-payment">
+          <option value="usd">$ usd</option>
+
+          <option value="rub">₽ rub</option>
+
+          <option value="btc">₿ btc</option>
+        </select>
+
+        <button class="trash-button margin-right-28px">
+          <i class="fa-solid fa-basket-shopping"></i>
+        </button>
+        <div class="header-devider"></div>
+
+        <button class="sign-in">Sign in</button>
+      </div>
+    </header>
+
+    <main>
+      <div class="container df">
+        <aside class="aside catalog-aside">
+          <a href="#" class="header-burger-item">
+            <img src="icons/burger/1.svg" alt="" />
+
+            Overwatch 2
+          </a>
+
+          <a href="#" class="header-burger-item">
+            <img src="icons/burger/2.svg" alt="" />
+
+            Hearthstone
+          </a>
+
+          <a href="#" class="header-burger-item">
+            <img src="icons/burger/3.svg" alt="" />
+
+            Counter Strike 2
+          </a>
+
+          <a href="#" class="header-burger-item">
+            <img src="icons/burger/4.svg" alt="" />
+
+            Apex legends
+          </a>
+
+          <a href="#" class="header-burger-item">
+            <img src="icons/burger/5.svg" alt="" />
+
+            Pubg
+          </a>
+
+          <a href="#" class="header-burger-item">
+            <img src="icons/burger/6.svg" alt="" />
+
+            Fortnite
+          </a>
+
+          <a href="#" class="header-burger-item">
+            <img src="icons/burger/7.svg" alt="" />
+
+            DOTA 2
+          </a>
+
+          <a href="#" class="header-burger-item">
+            <img src="icons/burger/8.svg" alt="" />
+
+            FIFA 24
+          </a>
+        </aside>
+
+        <div class="thanks-content">
+          <section class="thanks-hero">
+            <h1 class="title-first thanks-hero-title">
+              A GREAT BIG <br />
+              <span>THANK YOU!</span>
+            </h1>
+
+            <p class="subtitle">
+              Thank you for placing an order in our store, you can find
+              information about your order below
+            </p>
+          </section>
+
+          <section class="thanks-detail">
+            <h3 class="thanks-detail-title">Order Details</h3>
+
+            <div class="thanks-detail-purchase">
+              <img src="img/thanks/1.png" alt="" />
+
+              <div class="thanks-detail-purchase-text">
+                <p class="descr">
+                  Your Purchase order <span>Apex Legends Rank Boost</span>
+                </p>
+
+                <p class="descr">Your will be charged <span>$56.00</span></p>
+              </div>
+            </div>
+
+            <p class="descr thanks-detail-block-title">Payment Contact</p>
+            <div class="thanks-detail-block">
+              <div class="thanks-detail-block-items">
+                <div class="thanks-detail-block-item">
+                  <p class="descr">Name</p>
+                  <p class="descr"><span>Mikhail Lukovskoy</span></p>
+                </div>
+
+                <div class="thanks-detail-block-item">
+                  <p class="descr">Adress</p>
+                  <p class="descr"><span>1234 Realy Street, 302</span></p>
+                </div>
+
+                <div class="thanks-detail-block-item">
+                  <p class="descr">Information</p>
+                  <p class="descr"><span>TX 25202</span></p>
+                </div>
+              </div>
+            </div>
+
+            <p class="descr thanks-detail-block-title">Payment details</p>
+
+            <div class="thanks-detail-block">
+              <div class="thanks-detail-block-items">
+                <div class="thanks-detail-block-item">
+                  <p class="descr">Amount</p>
+                  <p class="descr"><span>$56.00</span></p>
+                </div>
+
+                <div class="thanks-detail-block-item">
+                  <p class="descr">Date</p>
+                  <p class="descr"><span>Aplril 04, 2022</span></p>
+                </div>
+
+                <div class="thanks-detail-block-item">
+                  <p class="descr">Method</p>
+                  <p class="descr">
+                    <i class="fa-brands fa-cc-mastercard"></i>
+                    <span>MasterCard ... 9582</span>
+                  </p>
+                </div>
+
+                <div class="thanks-detail-block-item">
+                  <p class="descr">Confirmation</p>
+                  <p class="descr"><span>2NHK67FB</span></p>
+                </div>
+              </div>
+            </div>
+            <p class="thanks-detail-text">
+              *Please note that the payment is non-refundable in the case of
+              cancellation.
+            </p>
+
+            <div class="thanks-detail-total">
+              <div class="thanks-detail-total-item">
+                <p class="thanks-detail-total-item-title">Subtotal</p>
+                <p class="thanks-detail-total-item-price">$56.00</p>
+              </div>
+
+              <div class="thanks-detail-total-item">
+                <p class="thanks-detail-total-item-title">Tax</p>
+                <p class="thanks-detail-total-item-price">$4.00</p>
+              </div>
+
+              <div
+                class="thanks-detail-total-item thanks-detail-total-item__head"
+              >
+                <p
+                  class="thanks-detail-total-item__head-title thanks-detail-total-item-title"
+                >
+                  Total
+                </p>
+                <p
+                  class="thanks-detail-total-item__head-price thanks-detail-total-item-price"
+                >
+                  $60.00
+                </p>
+              </div>
+            </div>
+
+            <button class="thanks-detail-button">Return to Shop</button>
+          </section>
+
+          <section class="thanks-also">
+            <h2 class="title-secondary" style="margin-bottom: 26px">
+              YOU MAY ALSO LIKE
+            </h2>
+
+            <div class="reviews-comments also-cards">
+              <button class="slider also-cards-button__first">
+                <i class="fa-solid fa-chevron-left"></i>
+              </button>
+
+              <div class="game-card game-card__hot" id="gameCard">
+                <div class="game-card-img">
+                  <img src="img/game-card/1.png" alt="" />
+                </div>
+
+                <div class="game-card-text">
+                  <p class="game-card-title">Wotlk Classic Ulduar Raid</p>
+
+                  <ul class="game-card-list">
+                    <li class="game-card-list-item">Get any desired rank</li>
+
+                    <li class="game-card-list-item">Top 500 boost available</li>
+
+                    <li class="game-card-list-item">Earn Competitive Points</li>
+                  </ul>
+
+                  <div class="game-card-price">
+                    <div class="game-card-price-block">
+                      <p class="game-card-price-text">From</p>
+
+                      <p class="game-card-price-number">$44.25</p>
+                    </div>
+
+                    <button class="next-button">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="game-card game-card__hot game-card__sale"
+                id="gameCard"
+              >
+                <div class="game-card-img">
+                  <img src="img/game-card/2.png" alt="" />
+                </div>
+
+                <div class="game-card-text">
+                  <p class="game-card-title">
+                    Aberrus, the Shadowed Crucible Mythic
+                  </p>
+
+                  <ul class="game-card-list">
+                    <li class="game-card-list-item">Get any desired rank</li>
+
+                    <li class="game-card-list-item">Top 500 boost available</li>
+
+                    <li class="game-card-list-item">Earn Competitive Points</li>
+                  </ul>
+
+                  <div class="game-card-price">
+                    <div class="game-card-price-block" id="priceBlock">
+                      <p class="game-card-price-text" id="priceText">From</p>
+
+                      <p class="game-card-price-number" id="priceText2">
+                        $44.25
+                      </p>
+                    </div>
+
+                    <button class="next-button">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="game-card game-card__new" id="gameCard">
+                <div class="game-card-img">
+                  <img src="img/game-card/3.png" alt="" />
+                </div>
+
+                <div class="game-card-text">
+                  <p class="game-card-title">Legends Unlock Boost</p>
+
+                  <ul class="game-card-list">
+                    <li class="game-card-list-item">Get any desired rank</li>
+
+                    <li class="game-card-list-item">Top 500 boost available</li>
+
+                    <li class="game-card-list-item">Earn Competitive Points</li>
+                  </ul>
+
+                  <div class="game-card-price">
+                    <div class="game-card-price-block">
+                      <p class="game-card-price-text">From</p>
+
+                      <p class="game-card-price-number">$44.25</p>
+                    </div>
+
+                    <button class="next-button">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="game-card game-card__new game-card__hot"
+                id="newHotCard"
+              >
+                <div class="game-card-img">
+                  <img src="img/game-card/4.png" alt="" />
+                </div>
+
+                <div class="game-card-text">
+                  <p class="game-card-title">Overwatch Unlock Competitive</p>
+
+                  <ul class="game-card-list">
+                    <li class="game-card-list-item">Get any desired rank</li>
+
+                    <li class="game-card-list-item">Top 500 boost available</li>
+
+                    <li class="game-card-list-item">Earn Competitive Points</li>
+                  </ul>
+
+                  <div class="game-card-price">
+                    <div class="game-card-price-block">
+                      <p class="game-card-price-text">From</p>
+
+                      <p class="game-card-price-number">$44.25</p>
+                    </div>
+
+                    <button class="next-button">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="also-cards-button">
+                <button class="slider">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </button>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="footer-list-container">
+          <ul class="footer-list">
+            <li class="footer-list-item footer-list-item__head">
+              <a href="#">Pirate bay service</a>
+            </li>
+
+            <li class="footer-list-item">
+              <a href="#">Home </a>
+            </li>
+
+            <li class="footer-list-item">
+              <a href="#">Blogs</a>
+            </li>
+
+            <li class="footer-list-item">
+              <a href="#">FAQ</a>
+            </li>
+
+            <li class="footer-list-item">
+              <a href="#">Jobs</a>
+            </li>
+
+            <li class="footer-list-item">
+              <a href="#">Contacts</a>
+            </li>
+
+            <li class="footer-list-item">
+              <a href="#">Request a service</a>
+            </li>
+          </ul>
+
+          <ul class="footer-list">
+            <li class="footer-list-item footer-list-item__head">
+              <a href="#">LEGAL</a>
+            </li>
+
+            <li class="footer-list-item">
+              <a href="#">Terms and conditions </a>
+            </li>
+
+            <li class="footer-list-item">
+              <a href="#">Privacy policy </a>
+            </li>
+
+            <li class="footer-list-item">
+              <a href="#">Refund policy </a>
+            </li>
+
+            <li class="footer-list-item">
+              <a href="#">Cookies policy </a>
+            </li>
+          </ul>
+        </div>
+
+        <ul class="footer-list mobile-margin-bottom-44px">
+          <li class="footer-list-item footer-list-item__head">
+            <a href="#">Contact US</a>
+          </li>
+
+          <li class="footer-list-item">
+            <a href="#">131 rue Pierre Brunies, 46000 CAHORS, France.</a>
+          </li>
+
+          <li class="footer-list-item">
+            <a href="#">support@piratebay-service.com</a>
+          </li>
+
+          <li class="footer-list-item">
+            <a href="#">Reg.No. W461006961</a>
+          </li>
+        </ul>
+
+        <div class="footer-social">
+          <p class="footer-social-title">SOCIAL NETWORKS</p>
+
+          <div class="footer-social-items">
+            <div class="social-item">
+              <a href="#" class="social-icon"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+            </div>
+
+            <div class="social-item">
+              <a href="#" class="social-icon"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+            </div>
+
+            <div class="social-item">
+              <a href="#" class="social-icon"
+                ><i class="fa-brands fa-square-instagram"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <ul
+          class="footer-list footer-list-order mobile-margin-bottom-50px mobile-display-flex"
+        >
+          <li class="footer-list-item__head footer-list-item">
+            <a href="#">GAMES</a>
+          </li>
+
+          <div class="footer-list-items">
+            <div class="footer-list-item-container">
+              <li class="footer-list-item">
+                <a href="#">Overwatch 2</a>
+              </li>
+
+              <li class="footer-list-item">
+                <a href="#">Hearthstone</a>
+              </li>
+
+              <li class="footer-list-item">
+                <a href="#">Apex</a>
+              </li>
+
+              <li class="footer-list-item">
+                <a href="#">legends</a>
+              </li>
+            </div>
+
+            <div class="footer-list-item-container">
+              <li class="footer-list-item">
+                <a href="#">Counter Strike 2</a>
+              </li>
+
+              <li class="footer-list-item">
+                <a href="#">Pubg</a>
+              </li>
+
+              <li class="footer-list-item">
+                <a href="#">legendFortnites</a>
+              </li>
+            </div>
+
+            <div class="footer-list-item-container">
+              <li class="footer-list-item">
+                <a href="#">Dota 2</a>
+              </li>
+
+              <li class="footer-list-item">
+                <a href="#">FIFA 22</a>
+              </li>
+            </div>
+          </div>
+        </ul>
+      </div>
+
+      <div class="footer-mid">
+        <ul
+          class="footer-list footer-list-order mobile-margin-bottom-50px mobile-display-none"
+        >
+          <li class="footer-list-item__head footer-list-item">
+            <a href="#">GAMES</a>
+          </li>
+
+          <div class="footer-list-items">
+            <div class="footer-list-item-container">
+              <li class="footer-list-item">
+                <a href="#">Overwatch 2</a>
+              </li>
+
+              <li class="footer-list-item">
+                <a href="#">Hearthstone</a>
+              </li>
+
+              <li class="footer-list-item">
+                <a href="#">Apex</a>
+              </li>
+
+              <li class="footer-list-item">
+                <a href="#">legends</a>
+              </li>
+            </div>
+
+            <div class="footer-list-item-container">
+              <li class="footer-list-item">
+                <a href="#">Counter Strike 2</a>
+              </li>
+
+              <li class="footer-list-item">
+                <a href="#">Pubg</a>
+              </li>
+
+              <li class="footer-list-item">
+                <a href="#">legendFortnites</a>
+              </li>
+            </div>
+
+            <div class="footer-list-item-container">
+              <li class="footer-list-item">
+                <a href="#">Dota 2</a>
+              </li>
+
+              <li class="footer-list-item">
+                <a href="#">FIFA 22</a>
+              </li>
+            </div>
+          </div>
+        </ul>
+
+        <div class="footer-payment">
+          <div class="footer-list-item footer-list-item__head">
+            <a href="#">Payment methods</a>
+          </div>
+
+          <div class="footer-payment-icons">
+            <img src="icons/footer/1.svg" alt="" />
+            <img src="icons/footer/2.svg" alt="" />
+            <img src="icons/footer/3.svg" alt="" />
+            <img src="icons/footer/4.svg" alt="" />
+            <img src="icons/footer/5.svg" alt="" />
+            <img src="icons/footer/6.svg" alt="" />
+            <img src="icons/footer/7.svg" alt="" />
+            <img src="icons/footer/8.svg" alt="" />
+          </div>
+
+          <div class="footer-rev">
+            <img src="icons/hero/1.svg" alt="" />
+            <p class="footer-rev-text">4.89 out of 5 based on 1459 reviews</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-bottom-text">
+          © Pirate Bay Services 2023. All right s reserved. 131 rue Pierre
+          Brunies, 46000 CAHORS, France. Reg.No. W461006961 All copyrights,
+          trade marks and service marks belong to their corresponding owners.
+          All mentioned brand names and related materials, logos and images are
+          registered property of the respective companies. Pirate Bay Services
+          is not associated with or endorsed by any copyright owner in any way
+          and offers services to players in different online games to make their
+          gaming experience better.
+        </p>
+
+        <form action="" class="footer-form">
+          <p class="footer-form-title">SUBSCRIBE TO NEWS</p>
+
+          <div class="footer-form-container">
+            <div class="footer-form-input">
+              <input
+                type="email"
+                name=""
+                id="footerInput"
+                placeholder="Sign up  to be in touch"
+              />
+              <label for="footerInput" id="footerLabel">
+                <img src="icons/footer/letter.svg" alt="" />
+              </label>
+            </div>
+
+            <button class="subscribe">SUBSCRIBE</button>
+          </div>
+        </form>
+      </div>
+    </footer>
+
+    <script src="./headerInput.js"></script>
+    <script src="./mobileMargins.js"></script>
+    <script src="./gameCardItems.js"></script>
+    <script src="./question.js"></script>
+    <script src="./footerInput.js"></script>
+    <script src="./burger.js"></script>
+    <script src="./profile-list-items.js"></script>
+    <script src="response-text.js"></script>
+    <script src="profile-cashback-item.js"></script>
+  </body>
+</html>
