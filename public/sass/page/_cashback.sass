@@ -1,0 +1,150 @@
+.cashback
+    &-hero
+        background: url("../img/cashback-hero/bcg.png"), $color-blue-dark
+        background-repeat: no-repeat
+        background-position: center center
+        padding: 3.8rem 0 8.3rem 32.6rem
+        margin-bottom: 14.2rem
+        @include mobile
+            background: url("../img/cashback-hero/mobile-bcg.png"), $color-blue-dark
+            background-repeat: no-repeat
+            background-position: center center
+            background-position-x: -3rem
+            background-position-y: 31rem
+            padding: 2rem 2rem 7.9rem 1.5rem
+            margin-bottom: 9rem
+        & > .bread-crumbs
+            padding: 0
+            color: $color-white
+            margin-bottom: 15.3rem
+            @include mobile
+                margin-bottom: 7.1rem
+            a
+                color: $color-white
+            i
+                color: $color-white
+        & > .title-first
+            width: 95.5rem
+            margin-bottom: 42.4rem
+            @include mobile
+                width: 100%
+                text-align: center
+                margin-bottom: 38.1rem
+        &-items
+            display: flex
+            align-items: start
+            @include mobile
+                flex-direction: column
+        &-item
+            display: flex
+            align-items: start
+            color: $color-white
+            width: 34.9rem
+            margin-bottom: 1.5rem
+            &:not(:last-child)
+                margin-right: 7.6rem
+            &-img
+                margin-right: 1.3rem
+            &-title
+                font-size: 1.8rem
+                font-weight: 800
+                margin-bottom: 1.5rem
+                width: 20.7rem
+            &-descr
+                color: $color-grey-vs
+                font-size: 1.4rem
+    &-coins
+        margin-bottom: 8rem
+        padding: 0 32.5rem
+        @include mobile
+            padding: 0 .8rem
+        & > .title-secondary
+            text-align: center
+            margin-bottom: 7.4rem
+        &-items
+            display: flex
+            align-items: center
+            justify-content: space-between
+            @include mobile
+                flex-direction: column
+        &-item
+            text-align: center
+            display: flex
+            flex-direction: column
+            align-items: center
+            width: 35.8rem
+            @include mobile
+                width: 100%
+            &-icon
+                background: $color-blue-light
+                border-radius: 50%
+                padding: 4.5rem
+                width: 14rem
+                margin-bottom: 2.5rem
+                position: relative
+                &::before
+                    content: " "
+                    display: inline-block
+                    width: 12.5rem
+                    height: 12.5rem
+                    background: none
+                    border-radius: 50%
+                    border: 3px solid $color-grey-border-dark
+                    position: absolute
+                    left: .8rem
+                    top: .7rem
+            &-title
+                color: $color-blue-dark
+                font-size: 3rem
+                font-weight: bold
+                margin-bottom: 1.3rem
+            &-descr
+                color: $color-blue-dark
+                font-size: 2.4rem
+    &-information
+        padding: 8.2rem 32.5rem
+        position: relative
+        margin-bottom: 17.4rem
+        @include mobile
+            padding: 6rem 1.5rem
+            margin-bottom: 14.4rem
+        &::before
+            content: " "
+            display: inline-block
+            width: 127rem
+            height: 1px
+            background: $color-grey-border-light
+            position: absolute
+            margin-bottom: 8rem
+            top: 0
+            @include mobile
+                width: 34.5rem
+        &::after
+            content: " "
+            display: inline-block
+            width: 127rem
+            height: 1px
+            background: $color-grey-border-light
+            position: absolute
+            bottom: 0
+            @include mobile
+                width: 34.5rem
+        &-title
+            margin-bottom: 3.7rem
+            font-size: 3rem
+            font-weight: 800
+            color: $color-blue-dark
+        & > .card-info-list
+            padding-left: 2rem
+            margin-bottom: 3.3rem
+    &-faq
+        margin-bottom: 15.3rem
+        @include mobile
+            margin-bottom: 36.2rem
+        & > .title-secondary
+            margin-bottom: 2.1rem
+            text-align: center
+        & .faq-question
+            width: 100%
+        & .faq-questions
+            width: 100%

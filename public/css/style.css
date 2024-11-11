@@ -4954,4 +4954,215 @@ section {
   font-size: 1.6rem;
 }
 
+.cashback-hero {
+  background: url("../img/cashback-hero/bcg.png"), #0B2239;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 3.8rem 0 8.3rem 32.6rem;
+  margin-bottom: 14.2rem;
+}
+@media (max-width: 375px) {
+  .cashback-hero {
+    background: url("../img/cashback-hero/mobile-bcg.png"), #0B2239;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-position-x: -3rem;
+    background-position-y: 31rem;
+    padding: 2rem 2rem 7.9rem 1.5rem;
+    margin-bottom: 9rem;
+  }
+}
+.cashback-hero > .bread-crumbs {
+  padding: 0;
+  color: #fff;
+  margin-bottom: 15.3rem;
+}
+@media (max-width: 375px) {
+  .cashback-hero > .bread-crumbs {
+    margin-bottom: 7.1rem;
+  }
+}
+.cashback-hero > .bread-crumbs a {
+  color: #fff;
+}
+.cashback-hero > .bread-crumbs i {
+  color: #fff;
+}
+.cashback-hero > .title-first {
+  width: 95.5rem;
+  margin-bottom: 42.4rem;
+}
+@media (max-width: 375px) {
+  .cashback-hero > .title-first {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 38.1rem;
+  }
+}
+.cashback-hero-items {
+  display: flex;
+  align-items: start;
+}
+@media (max-width: 375px) {
+  .cashback-hero-items {
+    flex-direction: column;
+  }
+}
+.cashback-hero-item {
+  display: flex;
+  align-items: start;
+  color: #fff;
+  width: 34.9rem;
+  margin-bottom: 1.5rem;
+}
+.cashback-hero-item:not(:last-child) {
+  margin-right: 7.6rem;
+}
+.cashback-hero-item-img {
+  margin-right: 1.3rem;
+}
+.cashback-hero-item-title {
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  width: 20.7rem;
+}
+.cashback-hero-item-descr {
+  color: #85919C;
+  font-size: 1.4rem;
+}
+.cashback-coins {
+  margin-bottom: 8rem;
+  padding: 0 32.5rem;
+}
+@media (max-width: 375px) {
+  .cashback-coins {
+    padding: 0 0.8rem;
+  }
+}
+.cashback-coins > .title-secondary {
+  text-align: center;
+  margin-bottom: 7.4rem;
+}
+.cashback-coins-items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 375px) {
+  .cashback-coins-items {
+    flex-direction: column;
+  }
+}
+.cashback-coins-item {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 35.8rem;
+}
+@media (max-width: 375px) {
+  .cashback-coins-item {
+    width: 100%;
+  }
+}
+.cashback-coins-item-icon {
+  background: #EEF4F8;
+  border-radius: 50%;
+  padding: 4.5rem;
+  width: 14rem;
+  margin-bottom: 2.5rem;
+  position: relative;
+}
+.cashback-coins-item-icon::before {
+  content: " ";
+  display: inline-block;
+  width: 12.5rem;
+  height: 12.5rem;
+  background: none;
+  border-radius: 50%;
+  border: 3px solid #7F93A7;
+  position: absolute;
+  left: 0.8rem;
+  top: 0.7rem;
+}
+.cashback-coins-item-title {
+  color: #0B2239;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1.3rem;
+}
+.cashback-coins-item-descr {
+  color: #0B2239;
+  font-size: 2.4rem;
+}
+.cashback-information {
+  padding: 8.2rem 32.5rem;
+  position: relative;
+  margin-bottom: 17.4rem;
+}
+@media (max-width: 375px) {
+  .cashback-information {
+    padding: 6rem 1.5rem;
+    margin-bottom: 14.4rem;
+  }
+}
+.cashback-information::before {
+  content: " ";
+  display: inline-block;
+  width: 127rem;
+  height: 1px;
+  background: #CCD5DF;
+  position: absolute;
+  margin-bottom: 8rem;
+  top: 0;
+}
+@media (max-width: 375px) {
+  .cashback-information::before {
+    width: 34.5rem;
+  }
+}
+.cashback-information::after {
+  content: " ";
+  display: inline-block;
+  width: 127rem;
+  height: 1px;
+  background: #CCD5DF;
+  position: absolute;
+  bottom: 0;
+}
+@media (max-width: 375px) {
+  .cashback-information::after {
+    width: 34.5rem;
+  }
+}
+.cashback-information-title {
+  margin-bottom: 3.7rem;
+  font-size: 3rem;
+  font-weight: 800;
+  color: #0B2239;
+}
+.cashback-information > .card-info-list {
+  padding-left: 2rem;
+  margin-bottom: 3.3rem;
+}
+.cashback-faq {
+  margin-bottom: 15.3rem;
+}
+@media (max-width: 375px) {
+  .cashback-faq {
+    margin-bottom: 36.2rem;
+  }
+}
+.cashback-faq > .title-secondary {
+  margin-bottom: 2.1rem;
+  text-align: center;
+}
+.cashback-faq .faq-question {
+  width: 100%;
+}
+.cashback-faq .faq-questions {
+  width: 100%;
+}
+
 /*# sourceMappingURL=style.css.map */
